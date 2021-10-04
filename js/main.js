@@ -13,25 +13,25 @@
         }
     });
     
-    
+    /**
     //===== Section Menu Active
 
     var scrollLink = $('.page-scroll');
         // Active link switching
         $(window).scroll(function() {
         var scrollbarLocation = $(this).scrollTop();
-
+        console.log('Scrollbar: ',scrollbarLocation);
+        //var offsetVal = {i:165};
         scrollLink.each(function() {
-
-          var sectionOffset = $(this.hash).offset().top - 73;
-
+          var sectionOffset = $(this).offset().top - 73;
+          console.log('Section: ', sectionOffset);
           if ( sectionOffset <= scrollbarLocation ) {
             $(this).parent().addClass('active');
             $(this).parent().siblings().removeClass('active');
           }
         });
     });
-    
+  
     
     //===== close navbar-collapse when a  clicked
     
@@ -49,7 +49,7 @@
     $(".navbar-nav a").on('click', function() {
         $(".navbar-toggler").removeClass('active');
     });
-    
+ **/
 
     
     /* 
@@ -69,11 +69,22 @@
 /* 
    MixitUp
    ========================================================================== */
-  $('#sectors-services').mixItUp();
+   $('#sectors-services').mixItUp();
+
+    // callback to set active class based on hash
+    function hashChange() {
+      var id = window.location.hash
+      $(id).addClass('active')
+    }
+    // bind the callback to hashchange and window.onload
+    $(window).on('hashchange', hashChange)
+    $(hashChange)
+
+    
 
 /* 
    Touch Owl Carousel
-   ========================================================================== */
+   ========================================================================== 
     var owl = $(".touch-slider");
     owl.owlCarousel({
       navigation: false,
@@ -89,7 +100,7 @@
     });
 
     $('.touch-slider').find('.owl-prev').html('<i class="fa fa-chevron-left"></i>');
-    $('.touch-slider').find('.owl-next').html('<i class="fa fa-chevron-right"></i>');
+    $('.touch-slider').find('.owl-next').html('<i class="fa fa-chevron-right"></i>');*/
 
 /* 
    Sticky Nav
@@ -100,6 +111,11 @@
         } else {
             $('.header-top-area').removeClass('menu-bg');
         }
+        /**Adjust team - founder position on scroll**/
+        if($(window).scrollTop() > 1200)
+            $('#teamFounder').css('position', 'absolute');
+        if($(window).scrollTop() < 1200)
+            $('#teamFounder').css('position', 'fixed');
     });
 
 /* 
@@ -198,3 +214,53 @@ function initMap() {
   });
 }
 **/
+/**OWL carousel banner**/
+jQuery(document).ready(function($){
+$('#carouselBanner').owlCarousel({
+    items:1,
+    loop: true,
+    autoplay:true,
+    autoplayTimeout:7000,
+    smartSpeed: 1000,
+    lazyLoad: true, 
+    navigation:true,
+    navigationText: [
+      "<img src='img/icons/chevron-left.png' class='icon-img'>",
+      "<img src='img/icons/chevron-right.png' class='icon-img'>"
+    ]
+  });
+});
+
+/**Quick Enquiry modal**/
+var modal = document.getElementById('id01');
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+
+// Services dropdown click listener
+  function linkAudit(){
+    window.location.href = "./sectors-services.html#assurance-audit"
+  };
+  function linkTax(){
+    window.location.href = "./sectors-services.html#taxation"
+  };
+  function linkInterTax(){
+    window.location.href = "./sectors-services.html#international-taxation"
+  };
+  function linkLegalServices(){
+    window.location.href = "./sectors-services.html#legal-services"
+  };
+  function linkMngtConsultancy(){
+    window.location.href = "./sectors-services.html#management-consultancy"
+  };
+  function linkRoc(){
+    window.location.href = "./sectors-services.html#roc"
+  };
+  function linkAncillary(){
+    window.location.href = "./sectors-services.html#ancillary-other-services"
+  };
+
+/**Footer - Current year**/
+document.getElementById("year").innerHTML = new Date().getFullYear();

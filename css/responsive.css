@@ -2,14 +2,48 @@
 /* tablets */
 /* only small tablets */
 @media (min-width: 768px) and (max-width: 991px) {
+  .navbar{
+  padding: 10px 30px !important;
+  }
+  .navbar-nav .nav-item:last-child{
+    margin-right: 0px;
+  }
   #hero-area .contents h1 {
-    font-size: 28px; }
+    font-size: 36px; }
 
+   .official-logos img{
+    width: 80px;
+   } 
   .item-boxes h4 {
     font-size: 18px; }
 
+  #news-insights .news-item-box h3{
+    font-size: 20px;
+  }  
+  #sectors-services .sectors-services-item ul{
+    padding-left: 20px !important;
+  }  
+
+  #team .showOnSmall{
+    display: block;
+    margin: auto;
+    margin-bottom: 40px !important;
+  }
+  #team .hideOnSmall{
+    display: none;
+  }
+
+  #careers .container{
+  background-size: 80%;
+  padding: 60px 40px 60px;}
+
   #features .show-box img {
     display: none; }
+
+  .contactSection { 
+  padding-left: 30px;
+  padding-right: 30px;
+  }
 
   .pricing-table .pricing-details ul li {
     font-size: 12px; }
@@ -31,16 +65,72 @@
     line-height: 20px; } }
 /* mobile or only mobile */
 @media (max-width: 767px) {
+  .navbar{
+  padding: 10px !important;
+  }
+  .navbar-nav .nav-item:last-child{
+    margin-right: 0px;
+  }
+  a.navbar-brand{
+    width: 70%;
+  }
+  a.navbar-brand img{
+    width: 100%;
+    height: auto;
+  }
+  .container{
+    padding: 0px !important;
+  }
+  .section {
+    padding: 60px 20px;
+  }
   .section-header .section-title {
-    font-size: 20px; }
+    font-size: 24px; }
 
   #hero-area .contents {
     padding: 140px 0 80px; }
 
   #hero-area .contents h1 {
-    font-size: 24px;
-    line-height: 30px; }
+    font-size: 30px;
+    line-height: 32px; }
 
+  #about{
+    background-position-x: right !important;
+  }  
+  #about .box-item {
+    padding: 5px 0px 10px;
+    display: block ruby;
+  }  
+  #about .box-item .text {
+  padding-left: 10px;
+  }
+  #about .coreValues th{
+  font-size: 18px;
+  padding-right: 10px;}
+  #news-insights .news-item-box{
+    margin: 20px auto 20px;
+  }
+  #news-insights .news-item-box h3{
+    font-size: 20px;
+  } 
+  #sectors-services .sectors-services-item ul{
+    padding-left: 0px !important;
+    padding-top: 20px;
+  }
+
+  .singlePage .mainSection {
+    margin: 60px auto 0px;  }
+
+  #team .showOnSmall{
+    display: block;
+    margin-bottom: 30px; }
+  #team .hideOnSmall{
+    display: none;
+  }
+
+  #careers .container{
+  background-size: cover;
+  padding: 40px 10px 40px;}
   #features .show-box img {
     display: none; }
 
@@ -48,10 +138,8 @@
     font-size: 14px; }
 
   .controls {
-    margin: 0px; }
-    .controls .btn {
-      font-size: 13px;
-      padding: 7px 7px; }
+    margin: 0px; 
+  }
 
   .video-promo .video-promo-content h2 {
     font-size: 22px; }
@@ -75,6 +163,10 @@
     margin-right: 10px; }
 
   .copyright {
-    float: left; } }
+    float: left; } 
+  .icon-img{
+      width: 24px;
+    } 
+  }
 
 /*# sourceMappingURL=responsive.css.map */
