@@ -47,12 +47,10 @@ body {
   background: #fff;
   line-height: 1.6 !important;
   overflow-x: hidden !important; 
-  /* Disables pull-to-refresh but allows overscroll glow effects. */
-  overscroll-behavior-y: contain !important;
  }
 
 html {
-  overscroll-behavior-y: contain; }
+  overflow-x: hidden !important;  }
 
 p {
   font-size: 18px;}
