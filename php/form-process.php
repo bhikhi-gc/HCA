@@ -17,24 +17,28 @@ if (empty($_POST["email"])) {
 }
 
 // MSG SUBJECT
+/**
 if (empty($_POST["msg_subject"])) {
     $errorMSG .= "Subject is required ";
 } else {
     $msg_subject = $_POST["msg_subject"];
-}
+}**/
 
+$msg_subject = "Enquiry from website";
 
 // MESSAGE
-if (empty($_POST["message"])) {
+if (empty($_POST["enquiry"])) {
     $errorMSG .= "Message is required ";
 } else {
-    $message = $_POST["message"];
+    $enquiry = $_POST["enquiry"];
 }
 
 
 $EmailTo = "bhikhi19gc@gmail.com";
 $Subject = "New Message Received";
-
+$headers = "From:".$email."\r\n".
+            "MIME-Version: 1.0"."\r\n".
+            "Content-Type: text/html; charset=utf-8";
 // prepare email body text
 $Body = "";
 $Body .= "Name: ";
@@ -47,11 +51,11 @@ $Body .= "Subject: ";
 $Body .= $msg_subject;
 $Body .= "\n";
 $Body .= "Message: ";
-$Body .= $message;
+$Body .= $enquiry;
 $Body .= "\n";
 
 // send email
-$success = mail($EmailTo, $Subject, $Body, "From:".$email);
+$success = mail($EmailTo, $Subject, $Body, $headers);
 
 // redirect to success page
 if ($success && $errorMSG == ""){

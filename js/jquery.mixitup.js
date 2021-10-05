@@ -39,10 +39,10 @@
 
 			animation: {
 				enable: true,
-				effects: 'fade scale',
-				duration: 600,
+				effects: 'fade',
+				duration: 300,
 				easing: 'ease',
-				perspectiveDistance: '3000',
+				perspectiveDistance: '1000',
 				perspectiveOrigin: '50% 50%',
 				queue: true,
 				queueLimit: 1,
@@ -77,7 +77,7 @@
 			},
 
 			load: {
-				filter: 'all',
+				filter: '.assurance-audit',
 				sort: false
 			},
 
