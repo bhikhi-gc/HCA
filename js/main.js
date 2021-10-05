@@ -61,10 +61,10 @@
 
 /* 
    CounterUp
-   ========================================================================== */
+   ========================================================================== 
     $('.counter').counterUp({
       time: 1000
-    });
+    });*/
 
 /* 
    MixitUp
@@ -120,7 +120,7 @@
 
 /* 
    VIDEO POP-UP
-   ========================================================================== */
+   ========================================================================== 
     $('.video-popup').magnificPopup({
         disableOn: 700,
         type: 'iframe',
@@ -128,7 +128,7 @@
         removalDelay: 160,
         preloader: false,
         fixedContentPos: false,
-    });
+    });*/
 
 
   /* 
@@ -240,6 +240,7 @@ modal.style.display = "none";
 }
 
 // Services dropdown click listener
+/**
   function linkAudit(){
     window.location.href = "./sectors-services.html#assurance-audit"
   };
@@ -261,6 +262,6 @@ modal.style.display = "none";
   function linkAncillary(){
     window.location.href = "./sectors-services.html#ancillary-other-services"
   };
-
+**/
 /**Footer - Current year**/
 document.getElementById("year").innerHTML = new Date().getFullYear();
