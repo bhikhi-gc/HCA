@@ -3,7 +3,7 @@
   "use strict";
 
   //===== Sticky
-    
+    /**
     $(window).on('scroll', function(event) {    
         var scroll = $(window).scrollTop();
         if (scroll < 20) {
@@ -12,7 +12,7 @@
             $(".navigation").addClass("sticky");
         }
     });
-    
+    **/
     /**
     //===== Section Menu Active
 
@@ -104,14 +104,14 @@
 
 /* 
    Sticky Nav
-   ========================================================================== */
+   ========================================================================== 
     $(window).on('scroll', function() {
         if ($(window).scrollTop() > 200) {
             $('.header-top-area').addClass('menu-bg');
         } else {
             $('.header-top-area').removeClass('menu-bg');
         }
-        /**Adjust team - founder position on scroll**/
+        /**Adjust team - founder position on scroll
         if($(window).scrollTop() > 1200)
             $('#teamFounder').css('position', 'absolute');
         if($(window).scrollTop() < 1200)
@@ -215,7 +215,7 @@ function initMap() {
 }
 **/
 /**OWL carousel banner**/
-jQuery(document).ready(function($){
+jQuery(document).load(function($){
 $('#carouselBanner').owlCarousel({
     items:1,
     loop: true,
@@ -240,7 +240,6 @@ modal.style.display = "none";
 }
 
 // Services dropdown click listener
-/**
   function linkAudit(){
     window.location.href = "./sectors-services.html#assurance-audit"
   };
@@ -262,6 +261,6 @@ modal.style.display = "none";
   function linkAncillary(){
     window.location.href = "./sectors-services.html#ancillary-other-services"
   };
-**/
+
 /**Footer - Current year**/
 document.getElementById("year").innerHTML = new Date().getFullYear();
