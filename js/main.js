@@ -52,14 +52,14 @@
 
 /* 
    Sticky Nav
-   ========================================================================== 
+   ========================================================================== */
     $(window).on('scroll', function() {
         if ($(window).scrollTop() > 200) {
             $('.header-top-area').addClass('menu-bg');
         } else {
             $('.header-top-area').removeClass('menu-bg');
         }
-        /**Adjust team - founder position on scroll
+        /**Adjust team - founder position on scroll**/
         if($(window).scrollTop() > 1200)
             $('#teamFounder').css('position', 'absolute');
         if($(window).scrollTop() < 1200)
