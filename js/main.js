@@ -3,7 +3,7 @@
   "use strict";
 
   //===== Sticky
-    /**
+    
     $(window).on('scroll', function(event) {    
         var scroll = $(window).scrollTop();
         if (scroll < 20) {
@@ -12,64 +12,29 @@
             $(".navigation").addClass("sticky");
         }
     });
-    **/
-    /**
-    //===== Section Menu Active
 
-    var scrollLink = $('.page-scroll');
-        // Active link switching
-        $(window).scroll(function() {
-        var scrollbarLocation = $(this).scrollTop();
-        console.log('Scrollbar: ',scrollbarLocation);
-        //var offsetVal = {i:165};
-        scrollLink.each(function() {
-          var sectionOffset = $(this).offset().top - 73;
-          console.log('Section: ', sectionOffset);
-          if ( sectionOffset <= scrollbarLocation ) {
-            $(this).parent().addClass('active');
-            $(this).parent().siblings().removeClass('active');
-          }
-        });
+    $(document).on( "mobileinit", function()
+    {
+        var silentScroll = $.mobile.silentScroll;
+        $.mobile.silentScroll = function( ypos )
+        {
+            if ( $.type( ypos ) !== "number" )
+            {
+                // FIX : prevent auto scroll to top after page load
+                return;
+            }
+            else
+            {
+                silentScroll.apply(this, arguments);
+            }
+        }
     });
-  
-    
-    //===== close navbar-collapse when a  clicked
-    
-    $(".navbar-nav a").on('click', function () {
-        $(".navbar-collapse").removeClass("show");
-    });
-    
-    
-    //===== Mobile Menu
-    
-    $(".navbar-toggler").on('click', function(){
-        $(this).toggleClass("active");
-    });
-    
-    $(".navbar-nav a").on('click', function() {
-        $(".navbar-toggler").removeClass('active');
-    });
- **/
-
     
     /* 
    & wow js
    ========================================================================== */
     //Initiat WOW JS
     new WOW().init();
-
-
-/* 
-   CounterUp
-   ========================================================================== 
-    $('.counter').counterUp({
-      time: 1000
-    });*/
-
-/* 
-   MixitUp
-   ========================================================================== */
-  // $('#sectors-services').mixItUp();
 
     // callback to set active class based on hash
     function hashChange() {
@@ -104,32 +69,19 @@
 
 /* 
    Sticky Nav
-   ========================================================================== 
+   ========================================================================== */
     $(window).on('scroll', function() {
         if ($(window).scrollTop() > 200) {
             $('.header-top-area').addClass('menu-bg');
         } else {
             $('.header-top-area').removeClass('menu-bg');
         }
-        /**Adjust team - founder position on scroll
+        /**Adjust team - founder position on scroll**/
         if($(window).scrollTop() > 1200)
             $('#teamFounder').css('position', 'absolute');
         if($(window).scrollTop() < 1200)
             $('#teamFounder').css('position', 'fixed');
     });
-
-/* 
-   VIDEO POP-UP
-   ========================================================================== 
-    $('.video-popup').magnificPopup({
-        disableOn: 700,
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 160,
-        preloader: false,
-        fixedContentPos: false,
-    });*/
-
 
   /* 
    SMOOTH SCROLL
@@ -169,14 +121,6 @@
       return false;
     })
 
-/* Nivo Lightbox
-  ========================================================   
-   $('.lightbox').nivoLightbox({
-    effect: 'fadeScale',
-    keyboardNav: true,
-  });
-*/
-
 /* stellar js
   ========================================================*/
   $.stellar({
@@ -198,24 +142,9 @@ $('#map')
       $(this).find('iframe').addClass('clicked')})
   .mouseleave(function(){
       $(this).find('iframe').removeClass('clicked')});
-/** Initialize and add the map
-function initMap() {
-  // The location of Uluru
-  const uluru = { lat: -25.344, lng: 131.036 };
-  // The map, centered at Uluru
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: uluru,
-  });
-  // The marker, positioned at Uluru
-  const marker = new google.maps.Marker({
-    position: uluru,
-    map: map,
-  });
-}
-**/
+
 /**OWL carousel banner**/
-jQuery(document).load(function($){
+jQuery(document).ready(function($){
 $('#carouselBanner').owlCarousel({
     items:1,
     loop: true,
