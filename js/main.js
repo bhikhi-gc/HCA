@@ -12,7 +12,9 @@
             $(".navigation").addClass("sticky");
         }
     });
-    
+    $(window).unload(function() {
+      alert('Handler for .unload() called.');
+    });
     /* 
    & wow js
    ========================================================================== */
