@@ -13,7 +13,7 @@
         }
     });
 
-    $(document).on( "mobileinit", function()
+    $(document  ).on( "mobileinit", function()
     {
         var silentScroll = $.mobile.silentScroll;
         $.mobile.silentScroll = function( ypos )
@@ -122,17 +122,17 @@
     })
 
 /* stellar js
-  ========================================================*/
+  ========================================================
   $.stellar({
     horizontalScrolling: true,
     verticalOffset: 40,
     responsive: true
   });
-
+*/
 /* 
    Page Loader
    ========================================================================== */
-  $('#loader').fadeOut();
+  //$('#loader').fadeOut();
 
 }(jQuery));
 
@@ -144,7 +144,7 @@ $('#map')
       $(this).find('iframe').removeClass('clicked')});
 
 /**OWL carousel banner**/
-jQuery(document).ready(function($){
+jQuery(document).load(function($){
 $('#carouselBanner').owlCarousel({
     items:1,
     loop: true,
