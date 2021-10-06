@@ -12,23 +12,6 @@
             $(".navigation").addClass("sticky");
         }
     });
-
-    $(document  ).on( "mobileinit", function()
-    {
-        var silentScroll = $.mobile.silentScroll;
-        $.mobile.silentScroll = function( ypos )
-        {
-            if ( $.type( ypos ) !== "number" )
-            {
-                // FIX : prevent auto scroll to top after page load
-                return;
-            }
-            else
-            {
-                silentScroll.apply(this, arguments);
-            }
-        }
-    });
     
     /* 
    & wow js
@@ -69,14 +52,14 @@
 
 /* 
    Sticky Nav
-   ========================================================================== */
+   ========================================================================== 
     $(window).on('scroll', function() {
         if ($(window).scrollTop() > 200) {
             $('.header-top-area').addClass('menu-bg');
         } else {
             $('.header-top-area').removeClass('menu-bg');
         }
-        /**Adjust team - founder position on scroll**/
+        /**Adjust team - founder position on scroll
         if($(window).scrollTop() > 1200)
             $('#teamFounder').css('position', 'absolute');
         if($(window).scrollTop() < 1200)
