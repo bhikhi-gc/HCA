@@ -12,25 +12,12 @@
             $(".navigation").addClass("sticky");
         }
     });
-    $(window).unload(function() {
-      alert('Handler for .unload() called.');
-    });
+
     /* 
    & wow js
    ========================================================================== */
     //Initiat WOW JS
-    new WOW().init();
-
-    // callback to set active class based on hash
-    function hashChange() {
-      var id = window.location.hash
-      $(id).addClass('active')
-    }
-    // bind the callback to hashchange and window.onload
-    $(window).on('hashchange', hashChange)
-    $(hashChange)
-
-    
+    new WOW().init();    
 
 /* 
    Touch Owl Carousel
@@ -120,14 +107,25 @@
    ========================================================================== */
   //$('#loader').fadeOut();
 
+  // callback to set active class based on hash
+    function hashChange() {
+      var id = window.location.hash
+      $(id).addClass('active')
+    }
+    // bind the callback to hashchange and window.onload
+    $(window).on('hashchange', hashChange)
+    $(hashChange)
+
+    /**Map - Deactivating mouse scroll zoom - Activate on click**/
+    $('#map')
+      .click(function(){
+          $(this).find('iframe').addClass('clicked')})
+      .mouseleave(function(){
+          $(this).find('iframe').removeClass('clicked')});
+
 }(jQuery));
 
-/**Map - Deactivating mouse scroll zoom - Activate on click**/
-$('#map')
-  .click(function(){
-      $(this).find('iframe').addClass('clicked')})
-  .mouseleave(function(){
-      $(this).find('iframe').removeClass('clicked')});
+
 
 /**OWL carousel banner**/
 jQuery(document).load(function($){
@@ -179,3 +177,14 @@ modal.style.display = "none";
 
 /**Footer - Current year**/
 document.getElementById("year").innerHTML = new Date().getFullYear();
+
+ window.onbeforeunload = function(e) {
+      alert('Handler for .onbeforeunload() called.');
+    };
+$(window).unload(function() {
+  alert('Handler for .unload() called.');
+});
+
+$('body').bind('beforeunload',function(){ 
+  alert('body refresh');
+});
