@@ -45,15 +45,14 @@ body {
   font-size: 18px !important;
   font-weight: 400;
   background: #fff;
-  line-height: 1.6 !important; 
+  line-height: 1.6 !important;
+  overflow-x: hidden; 
   height: 100%;
-        -webkit-overflow-scrolling: touch;
-    overflow-x: auto;
-    overflow-y: scroll;
  }
 
 html {
-  height: 100%;
+  overflow-x: hidden; 
+  overscroll-behavior: none;
 }
 
 
