@@ -128,19 +128,19 @@
 
 
 /**OWL carousel banner**/
-jQuery(document).load(function($){
+jQuery(document).ready(function($){
 $('#carouselBanner').owlCarousel({
-    items:1,
     loop: true,
-    autoplay:true,
-    autoplayTimeout:7000,
-    smartSpeed: 1000,
-    lazyLoad: true, 
+    autoplay:3000,
+    items:1, 
+    itemsDesktop: [1199, 1],
+    itemsDesktopSmall: [979, 1],
     navigation:true,
     navigationText: [
       "<img src='img/icons/chevron-left.png' class='icon-img'>",
       "<img src='img/icons/chevron-right.png' class='icon-img'>"
-    ]
+    ],
+    lazyLoad: true,
   });
 });
 
@@ -177,14 +177,3 @@ modal.style.display = "none";
 
 /**Footer - Current year**/
 document.getElementById("year").innerHTML = new Date().getFullYear();
-
- window.onbeforeunload = function(e) {
-      alert('Handler for .onbeforeunload() called.');
-    };
-$(window).unload(function() {
-  alert('Handler for .unload() called.');
-});
-
-$('body').bind('beforeunload',function(){ 
-  alert('body refresh');
-});
