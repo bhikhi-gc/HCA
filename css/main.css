@@ -45,12 +45,17 @@ body {
   font-size: 18px !important;
   font-weight: 400;
   background: #fff;
-  line-height: 1.6 !important;
-  overflow-x: hidden !important; 
+  line-height: 1.6 !important; 
+  height: 100%;
+        -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    overflow-y: scroll;
  }
 
 html {
-  overflow-x: hidden !important;  }
+  height: 100%;
+}
+
 
 p {
   font-size: 18px;}
