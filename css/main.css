@@ -919,7 +919,7 @@ display: none;
   align-items: center;
   justify-content: center;
   position: relative;
-  z-index: 9;
+  z-index: -1;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
