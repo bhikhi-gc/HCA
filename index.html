@@ -24,788 +24,788 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
   </head>
 
+<div id="wrappingBody">
 <body>
 
-<!-- Header Section Start -->
-<header id="hero-area" data-stellar-background-ratio="0.5">    
-  <!-- Navbar Start -->
-  <div class="navigation">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-     <div class="container-fluid">
-       <a class="navbar-brand" href="index.html"><img src="img/HCA_logo.png" alt="" height="60px"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-controls="main_nav"  aria-expanded="false" aria-label="Toggle navigation">        
-          <i class="lnr lnr-menu"></i>
-        </button>
-      <div class="collapse navbar-collapse" id="main_nav">
-      <ul class="navbar-nav mr-auto w-100 justify-content-end">
-        <li class="nav-item"> <a class="nav-link page-scroll" href="#hero-area">Home </a> </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle page-scroll" href="#sectors-services"> Services </a>
-            <ul class="dropdown-menu">
-            <li class="has-megasubmenu">
-               <a class="dropdown-item" href="javascript:linkAudit()"> Audit & Assurance &raquo; </a>
-               <div class="megasubmenu dropdown-menu">
-               <div class="row">
-                        <div class="col">
-                              <!--<h6 class="title">Audit & Assurance</h6>-->
-                                <ul class="list-unstyled">
-                                    <li><a href="">Statutory Audits</a></li>
-                                    <li><a href="">Income Tax Audits</a></li>
-                                    <li><a href="">GST Audits</a></li>
-                                    <li><a href="">Inventory Audits</a></li>
-                                    <li><a href="">Trust Audits</a></li>
-                                    <li><a href="">Management Audits</a></li>
-                                    <li><a href="">Internal Audits/Internal Financial Control(IFC)</a></li>
-                                    <li><a href="">Fraud Investigation</a></li>
-                                </ul>
-                        </div><!-- end col-3 -->
-                    </div><!-- end row -->
-             </div>
-            </li>
-            <li class="has-megasubmenu">
-               <a class="dropdown-item" href="javascript:linkTax()"> Taxation &raquo; </a>
-               <div class="megasubmenu dropdown-menu">
-               <div class="row">
-                        <div class="col">
-                                <ul class="list-unstyled">
-                                    <li><a href="">Corporate Taxation</a></li>
-                                    <li><a href="">Individual Taxation</a></li>
-                                    <li><a href="">Firm Taxation</a></li>
-                                    <li><a href="">Merger & Acquisition</a></li>
-                                    <li><a href="">Tax Advisory</a></li>
-                                </ul>
-                        </div><!-- end col-3 -->
-                    </div><!-- end row -->
-             </div>
-            </li>
-            <li class="has-megasubmenu">
-               <a class="dropdown-item" href="javascript:linkInterTax()"> International Taxation &raquo; </a>
-               <div class="megasubmenu dropdown-menu">
-               <div class="row">
-                        <div class="col">
-                                <ul class="list-unstyled">
-                                    <li><a href="">Business Setup Service</a></li>
-                                    <li><a href="">Transfer Pricing</a></li>
-                                    <li><a href="">Tax planning & Optimization for domestic & Overseas Companies</a></li>
-                                    <li><a href="">Double Taxation Avoidance</a></li>
-                                    <li><a href="">NRI Taxation</a></li>
-                                    <li><a href="">Foreign Company Formation</a></li>
-                                </ul>
-                        </div><!-- end col-3 -->
-                    </div><!-- end row -->
-             </div>
-            </li>
-            <li class="has-megasubmenu">
-               <a class="dropdown-item" href="javascript:linkLegalServices()"> Legal services &raquo; </a>
-               <div class="megasubmenu dropdown-menu">
-               <div class="row">
-                        <div class="col">
-                                <ul class="list-unstyled">
-                                    <li><a href="">LLP/Firm Deed</a></li>
-                                    <li><a href="">HUF Deed</a></li>
-                                    <li><a href="">Gift Deed</a></li>
-                                    <li><a href="">Lease Deed</a></li>
-                                    <li><a href="">Affidavits</a></li>
-                                    <li><a href="">Liasion Office Setup</a></li>
-                                    <li><a href="">FEMA/RBI Compliance</a></li>
-                                </ul>
-                        </div><!-- end col-3 -->
-                    </div><!-- end row -->
-             </div>
-            </li>
-            <li class="has-megasubmenu">
-               <a class="dropdown-item" href="javascript:linkMngtConsultancy()"> Management Consultancy &raquo; </a>
-               <div class="megasubmenu dropdown-menu">
-               <div class="row">
-                        <div class="col">
-                                <ul class="list-unstyled">
-                                    <li><a href="">Business Planning</a></li>
-                                    <li><a href="">Accounting Outsourcing</a></li>
-                                    <li><a href="">Overseas Accounting</a></li>
-                                    <li><a href="">Business Valuation</a></li>
-                                    <li><a href="">Due Diligence</a></li>
-                                    <li><a href="">Strategic Planning & Consulting</a></li>
-                                    <li><a href="">Investment Advisory</a></li>
-                                    <li><a href="">Data Management</a></li>
-                                    <li><a href="">Fixed Assets Management</a></li>
-                                    <li><a href="">Valuations (other)</a></li>
-                                    <li><a href="">Fixed Assets Management</a></li>
-                                </ul>
-                        </div><!-- end col-3 -->
-                    </div><!-- end row -->
-             </div>
-            </li>
-            <li class="has-megasubmenu">
-               <a class="dropdown-item" href="javascript:linkRoc()"> ROC &raquo; </a>
-               <div class="megasubmenu dropdown-menu">
-               <div class="row">
-                        <div class="col">
-                                <ul class="list-unstyled">
-                                    <li><a href="">Incorporation of Companies/LLP</a></li>
-                                    <li><a href="">Corporation Restructuring</a></li>
-                                    <li><a href="">Amalgamation</a></li>
-                                    <li><a href="">Merger</a></li>
-                                    <li><a href="">Take Over</a></li>
-                                    <li><a href="">Compromise</a></li>
-                                    <li><a href="">Demerger/Split Spin off or Hive off</a></li>
-                                    <li><a href="">Slump Sales</a></li>
-                                    <li><a href="">Revival of defunct/ Sick Companies</a></li>
-                                    <li><a href="">Joint Venture. Foreign Collaboration/ Alliance</a></li>
-                                    <li><a href="">Applications & Approvals under Central Govt</a></li>
-                                    <li><a href="">NCLT</a></li>
-                                    <li><a href="">Regional Director</a></li>
-                                    <li><a href="">Registrar of Companies</a></li>
-                                    <li><a href="">Insolvency & Bankruptcy Code</a></li>
-                                </ul>
-                        </div><!-- end col-3 -->
-                    </div><!-- end row -->
-             </div>
-            </li>
-            <li class="has-megasubmenu">
-               <a class="dropdown-item" href="javascript:linkAncillary()"> Ancillary Other Services &raquo; </a>
-               <div class="megasubmenu dropdown-menu">
-               <div class="row">
-                        <div class="col">
-                                <ul class="list-unstyled">
-                                    <li><a href="">Financial Reporting</a></li>
-                                    <li><a href="">Analyzing Financial Data</a></li>
-                                    <li><a href="">Project Report/ Financing</a></li>
-                                </ul>
-                        </div><!-- end col-3 -->
-                    </div><!-- end row -->
-             </div>
-            </li>
+  <!-- Header Section Start -->
+  <header id="hero-area" data-stellar-background-ratio="0.5">    
+    <!-- Navbar Start -->
+    <div class="navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+       <div class="container-fluid">
+         <a class="navbar-brand" href="index.html"><img src="img/HCA_logo.png" alt="" height="60px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-controls="main_nav"  aria-expanded="false" aria-label="Toggle navigation">        
+            <i class="lnr lnr-menu"></i>
+          </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+        <ul class="navbar-nav mr-auto w-100 justify-content-end">
+          <li class="nav-item"> <a class="nav-link page-scroll" href="#hero-area">Home </a> </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle page-scroll" href="#sectors-services"> Services </a>
+              <ul class="dropdown-menu">
+              <li class="has-megasubmenu">
+                 <a class="dropdown-item" href="javascript:linkAudit()"> Audit & Assurance &raquo; </a>
+                 <div class="megasubmenu dropdown-menu">
+                 <div class="row">
+                          <div class="col">
+                                <!--<h6 class="title">Audit & Assurance</h6>-->
+                                  <ul class="list-unstyled">
+                                      <li><a href="">Statutory Audits</a></li>
+                                      <li><a href="">Income Tax Audits</a></li>
+                                      <li><a href="">GST Audits</a></li>
+                                      <li><a href="">Inventory Audits</a></li>
+                                      <li><a href="">Trust Audits</a></li>
+                                      <li><a href="">Management Audits</a></li>
+                                      <li><a href="">Internal Audits/Internal Financial Control(IFC)</a></li>
+                                      <li><a href="">Fraud Investigation</a></li>
+                                  </ul>
+                          </div><!-- end col-3 -->
+                      </div><!-- end row -->
+               </div>
+              </li>
+              <li class="has-megasubmenu">
+                 <a class="dropdown-item" href="javascript:linkTax()"> Taxation &raquo; </a>
+                 <div class="megasubmenu dropdown-menu">
+                 <div class="row">
+                          <div class="col">
+                                  <ul class="list-unstyled">
+                                      <li><a href="">Corporate Taxation</a></li>
+                                      <li><a href="">Individual Taxation</a></li>
+                                      <li><a href="">Firm Taxation</a></li>
+                                      <li><a href="">Merger & Acquisition</a></li>
+                                      <li><a href="">Tax Advisory</a></li>
+                                  </ul>
+                          </div><!-- end col-3 -->
+                      </div><!-- end row -->
+               </div>
+              </li>
+              <li class="has-megasubmenu">
+                 <a class="dropdown-item" href="javascript:linkInterTax()"> International Taxation &raquo; </a>
+                 <div class="megasubmenu dropdown-menu">
+                 <div class="row">
+                          <div class="col">
+                                  <ul class="list-unstyled">
+                                      <li><a href="">Business Setup Service</a></li>
+                                      <li><a href="">Transfer Pricing</a></li>
+                                      <li><a href="">Tax planning & Optimization for domestic & Overseas Companies</a></li>
+                                      <li><a href="">Double Taxation Avoidance</a></li>
+                                      <li><a href="">NRI Taxation</a></li>
+                                      <li><a href="">Foreign Company Formation</a></li>
+                                  </ul>
+                          </div><!-- end col-3 -->
+                      </div><!-- end row -->
+               </div>
+              </li>
+              <li class="has-megasubmenu">
+                 <a class="dropdown-item" href="javascript:linkLegalServices()"> Legal services &raquo; </a>
+                 <div class="megasubmenu dropdown-menu">
+                 <div class="row">
+                          <div class="col">
+                                  <ul class="list-unstyled">
+                                      <li><a href="">LLP/Firm Deed</a></li>
+                                      <li><a href="">HUF Deed</a></li>
+                                      <li><a href="">Gift Deed</a></li>
+                                      <li><a href="">Lease Deed</a></li>
+                                      <li><a href="">Affidavits</a></li>
+                                      <li><a href="">Liasion Office Setup</a></li>
+                                      <li><a href="">FEMA/RBI Compliance</a></li>
+                                  </ul>
+                          </div><!-- end col-3 -->
+                      </div><!-- end row -->
+               </div>
+              </li>
+              <li class="has-megasubmenu">
+                 <a class="dropdown-item" href="javascript:linkMngtConsultancy()"> Management Consultancy &raquo; </a>
+                 <div class="megasubmenu dropdown-menu">
+                 <div class="row">
+                          <div class="col">
+                                  <ul class="list-unstyled">
+                                      <li><a href="">Business Planning</a></li>
+                                      <li><a href="">Accounting Outsourcing</a></li>
+                                      <li><a href="">Overseas Accounting</a></li>
+                                      <li><a href="">Business Valuation</a></li>
+                                      <li><a href="">Due Diligence</a></li>
+                                      <li><a href="">Strategic Planning & Consulting</a></li>
+                                      <li><a href="">Investment Advisory</a></li>
+                                      <li><a href="">Data Management</a></li>
+                                      <li><a href="">Fixed Assets Management</a></li>
+                                      <li><a href="">Valuations (other)</a></li>
+                                      <li><a href="">Fixed Assets Management</a></li>
+                                  </ul>
+                          </div><!-- end col-3 -->
+                      </div><!-- end row -->
+               </div>
+              </li>
+              <li class="has-megasubmenu">
+                 <a class="dropdown-item" href="javascript:linkRoc()"> ROC &raquo; </a>
+                 <div class="megasubmenu dropdown-menu">
+                 <div class="row">
+                          <div class="col">
+                                  <ul class="list-unstyled">
+                                      <li><a href="">Incorporation of Companies/LLP</a></li>
+                                      <li><a href="">Corporation Restructuring</a></li>
+                                      <li><a href="">Amalgamation</a></li>
+                                      <li><a href="">Merger</a></li>
+                                      <li><a href="">Take Over</a></li>
+                                      <li><a href="">Compromise</a></li>
+                                      <li><a href="">Demerger/Split Spin off or Hive off</a></li>
+                                      <li><a href="">Slump Sales</a></li>
+                                      <li><a href="">Revival of defunct/ Sick Companies</a></li>
+                                      <li><a href="">Joint Venture. Foreign Collaboration/ Alliance</a></li>
+                                      <li><a href="">Applications & Approvals under Central Govt</a></li>
+                                      <li><a href="">NCLT</a></li>
+                                      <li><a href="">Regional Director</a></li>
+                                      <li><a href="">Registrar of Companies</a></li>
+                                      <li><a href="">Insolvency & Bankruptcy Code</a></li>
+                                  </ul>
+                          </div><!-- end col-3 -->
+                      </div><!-- end row -->
+               </div>
+              </li>
+              <li class="has-megasubmenu">
+                 <a class="dropdown-item" href="javascript:linkAncillary()"> Ancillary Other Services &raquo; </a>
+                 <div class="megasubmenu dropdown-menu">
+                 <div class="row">
+                          <div class="col">
+                                  <ul class="list-unstyled">
+                                      <li><a href="">Financial Reporting</a></li>
+                                      <li><a href="">Analyzing Financial Data</a></li>
+                                      <li><a href="">Project Report/ Financing</a></li>
+                                  </ul>
+                          </div><!-- end col-3 -->
+                      </div><!-- end row -->
+               </div>
+              </li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle page-scroll" href="#about"> About </a>
+              <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="team.html"> Team </a></li>
             </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle page-scroll" href="#about"> About </a>
-            <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="team.html"> Team </a></li>
-          </ul>
-        </li>
-        <li class="nav-item"> <a class="nav-link page-scroll" href="#news-insights"> Insights </a> </li>
-        <li class="nav-item"><a class="nav-link page-scroll" href="#contact"> Contact </a></li>
-        <li class="nav-item"><a class="nav-link page-scroll" href="careers.html"> Careers </a></li>
-        <li><a href="https://www.icai.org/"><img src="img/CA_logo.png" height="40px"></a></li>
-      </ul>
-      </div> <!-- navbar-collapse.// -->
-     </div> <!-- container-fluid.// -->
-    </nav>
-  </div>
-  <!-- Navbar End -->   
-  <div class="rowBanner"> 
-    <div id="carouselBanner" class="owl-carousel owl-theme rowContent justify-content-center">
-      <div class="row item" id="banner-1">
-        <div class="col-12 owl-lazy contents text-center" style="margin-top: 200px;">
-            <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Harish Choudhary & Associates</h1>
-            <p class="wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">Services backed up by <b>Credibility</b> & <b>Trustworthiness</b></p>
-            <a class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms" onclick="document.getElementById('id01').style.display='flex'">Enquire Now</a>
-        </div>
-        <div id="impLinks" class="col-12 d-flex justify-content-center align-items-end wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms" style="margin-bottom: 5%">
-            <a href="https://www.gst.gov.in/"><img src="./img/official-logos/GST.png"></a>
-            <a href="https://www.mca.gov.in/content/mca/global/en/home.html"><img src="./img/official-logos/MCA.png"></a>
-            <a href="https://www.rbi.org.in/"><img src="./img/official-logos/RBI.png" width="90px"></a>
-            <a href="https://incometaxindia.gov.in/Pages/default.aspx"><img src="./img/official-logos/Income_Tax_Department_India.png"></a>
-        </div>
-      </div>
-      <div class="row item" id="banner-2">
-        <div class="col-12 owl-lazy contents text-center" style="margin-top: 200px;">
-            <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="5.5s">या एष सुप्तेषु जागति</h1>
-            <p class="wow fadeIn" data-wow-duration="1000ms" data-wow-delay="5.9s">"a person who is awake in those that sleep"</p>
-            <!--<div><img src="./img/icai_egal_logo.png" width="200px" class="wow fadeIn" data-wow-duration="1000ms" data-wow-delay="6400ms"></div>-->
-            <a href="sectors-services.html" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="5.9s">Our Services</a>
-        </div>
-        <div id="impLinks" class="col-12 d-flex justify-content-center align-items-end wow fadeIn" data-wow-duration="1000ms" data-wow-delay="6.1s" style="margin-bottom: 5%">
-            <a href="https://www.gst.gov.in/"><img src="./img/official-logos/GST.png"></a>
-            <a href="https://www.mca.gov.in/content/mca/global/en/home.html"><img src="./img/official-logos/MCA.png"></a>
-            <a href="https://www.rbi.org.in/"><img src="./img/official-logos/RBI.png" width="90px"></a>
-            <a href="https://incometaxindia.gov.in/Pages/default.aspx"><img src="./img/official-logos/Income_Tax_Department_India.png"></a>
-        </div>
-      </div>
+          </li>
+          <li class="nav-item"> <a class="nav-link page-scroll" href="#news-insights"> Insights </a> </li>
+          <li class="nav-item"><a class="nav-link page-scroll" href="#contact"> Contact </a></li>
+          <li class="nav-item"><a class="nav-link page-scroll" href="careers.html"> Careers </a></li>
+          <li><a href="https://www.icai.org/"><img src="img/CA_logo.png" height="40px"></a></li>
+        </ul>
+        </div> <!-- navbar-collapse.// -->
+       </div> <!-- container-fluid.// -->
+      </nav>
     </div>
-      <!--
-      <div class="row rowNews"> 
-        <div class="col-md-3 section-header">
-          <h2 class="section-title">News & Updates | </h2>
+    <!-- Navbar End -->   
+    <div class="rowBanner"> 
+      <div id="carouselBanner" class="owl-carousel owl-theme rowContent justify-content-center">
+        <div class="row item" id="banner-1">
+          <div class="col-12 owl-lazy contents text-center" style="margin-top: 200px;">
+              <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Harish Choudhary & Associates</h1>
+              <p class="wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">Services backed up by <b>Credibility</b> & <b>Trustworthiness</b></p>
+              <a class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms" onclick="document.getElementById('id01').style.display='flex'">Enquire Now</a>
+          </div>
+          <div id="impLinks" class="col-12 d-flex justify-content-center align-items-end wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms" style="margin-bottom: 5%">
+              <a href="https://www.gst.gov.in/"><img src="./img/official-logos/GST.png"></a>
+              <a href="https://www.mca.gov.in/content/mca/global/en/home.html"><img src="./img/official-logos/MCA.png"></a>
+              <a href="https://www.rbi.org.in/"><img src="./img/official-logos/RBI.png" width="90px"></a>
+              <a href="https://incometaxindia.gov.in/Pages/default.aspx"><img src="./img/official-logos/Income_Tax_Department_India.png"></a>
+          </div>
         </div>
-        <div class="col-md-9 newsScroller">
-          <ul>
-            <li>
-              <p><a href="#">Goods & Services Tax</a></p>
-            </li>
-            <li>
-              <p><a href="#">Income Tax</a></p>
-            </li>
-            <li>
-              <p><a href="#">Registrar of Companies</a></p>
-            </li>
-          </ul>
-        </div> 
-      </div> -->
-  </div>          
-</header>
-<!-- Header Section End --> 
-
-<!-- Quick enquiry modal pop-up-->
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-lg-12 col-sm-12 col-12">
-      <div class="popup-btn" onclick="document.getElementById('id01').style.display='flex'">
-        <a href="#id01">Quick Enquiry</a>
-      </div>
-      <div id="id01" class="modal">
-        <div class="col-lg-6 col-md-10 col-xs-12">
-        <div class="modal-body">
-        <form class="modal-content animate" action="php/form-process.php" id="enquiryForm" method="post">
-        <div class="modal-header">
-        <h5 class="modal-title">Quick Enquiry</h5>
-        </div>
-        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
-
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your full name">
-                    <div class="help-block with-errors"></div>
-                  </div>                                 
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="companyName" name="companyName" placeholder="Your Company Name(optional)">
-                  </div>                                 
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input type="number" class="form-control" id="phoneNum" name="phoneNum" placeholder="Your Phone Number" required data-error="Please enter phone number">
-                    <div class="help-block with-errors"></div>
-                  </div>                                 
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input type="email" placeholder="Your Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
-                    <div class="help-block with-errors"></div>
-                  </div> 
-                </div>
-                <div class="col-md-12">
-                  <div class="form-group"> 
-                    <textarea class="form-control" id="enquiry" placeholder="Your Enquiry" name="enquiry" rows="8" data-error="Write your query" required></textarea>
-                    <div class="help-block with-errors"></div>
-                  </div>
-                  <div class="submit-button text-center">
-                    <button class="btn btn-common" id="submit" type="submit">Send Message</button>
-                    <div id="msgSubmit" class="h3 text-center hidden"></div> 
-                    <div class="clearfix"></div> 
-                  </div>
-                </div>
-              </div>            
-                    
-        </form>
-        </div>
+        <div class="row item" id="banner-2">
+          <div class="col-12 owl-lazy contents text-center" style="margin-top: 200px;">
+              <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="5.5s">या एष सुप्तेषु जागति</h1>
+              <p class="wow fadeIn" data-wow-duration="1000ms" data-wow-delay="5.9s">"a person who is awake in those that sleep"</p>
+              <!--<div><img src="./img/icai_egal_logo.png" width="200px" class="wow fadeIn" data-wow-duration="1000ms" data-wow-delay="6400ms"></div>-->
+              <a href="sectors-services.html" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="5.9s">Our Services</a>
+          </div>
+          <div id="impLinks" class="col-12 d-flex justify-content-center align-items-end wow fadeIn" data-wow-duration="1000ms" data-wow-delay="6.1s" style="margin-bottom: 5%">
+              <a href="https://www.gst.gov.in/"><img src="./img/official-logos/GST.png"></a>
+              <a href="https://www.mca.gov.in/content/mca/global/en/home.html"><img src="./img/official-logos/MCA.png"></a>
+              <a href="https://www.rbi.org.in/"><img src="./img/official-logos/RBI.png" width="90px"></a>
+              <a href="https://incometaxindia.gov.in/Pages/default.aspx"><img src="./img/official-logos/Income_Tax_Department_India.png"></a>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-<!-- Quick enquiry modal pop-up END-->
-
-<!--Fixed contact buttons-->
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <a href="tel:022-49732394" id="btnCall"><img src="./img/icons/call.png" class="icon-img"></a>
-    </div>
-    <div class="col">
-      <a href="mailto:harishsc1989@gmail.com" id="btnMail"><img src="./img/icons/gmail.png" class="icon-img"></a>
-    </div>
-    <div class="col">
-      <a href="#" id="btnWhatsapp"><img src="./img/icons/whatsapp.png" class="icon-img"></a>
-    </div>
-  </div>  
-</div>
-
-<!-- Services Section -->
-<section id="sectors-services" class="section">
-  <!-- Container Starts -->
-  <div class="container">
-    <div class="section-header">          
-      <h2 class="section-title">Sectors & Services</h2>
-      <hr class="lines">
-      <p>The firm is focused at providing quality services in the field of Taxation, Audit & Assurance, Corporate law & Accountancy and Carters to small, medium & large companies spread across a wide range of industries across sectors, geographies & sizes.</p>
-    </div>
-    <div class="row sectorList" style="overflow: hidden;justify-content: center;">
-      <div class="col-sm-12 col-md-4 col-lg-3">
-        <div class="singleSector">
-          <a href="javascript:linkAudit()">
-              <span class="sectorIcon">
-                <img src="./img/icons/audit.png">
-              </span>
-              <h5>Audit & Assurance</h5>
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4 col-lg-3">
-        <div class="singleSector">
-          <a href="javascript:linkTax()">
-            <span class="sectorIcon">
-              <img src="./img/icons/tax.png">
-            </span>
-            <h5>Taxation</h5>
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4 col-lg-3">
-        <div class="singleSector">           
-          <a href="javascript:linkInterTax()">
-              <span class="sectorIcon">
-                <img src="./img/icons/international-tax.png">
-              </span>
-              <h5>International Taxation</h5>
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4 col-lg-3">
-        <div class="singleSector">
-          <a href="javascript:linkLegalServices()">
-              <span class="sectorIcon">
-                <img src="./img/icons/legal-services.png">
-              </span>
-              <h5>Legal Services</h5>
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4 col-lg-3">
-        <div class="singleSector">
-          <a href="javascript:linkMngtConsultancy()">
-              <span class="sectorIcon">
-                <img src="./img/icons/consultation.png">
-              </span>
-              <h5>Management Consultancy</h5>
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4 col-lg-3">
-        <div class="singleSector">
-          <a href="javascript:linkRoc()">
-              <span class="sectorIcon">
-                <img src="./img/icons/roc.png">
-              </span>
-              <h5>ROC</h5>
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4 col-lg-3">
-        <div class="singleSector">
-          <a href="javascript:linkAncillary()">
-              <span class="sectorIcon">
-                <img src="./img/icons/ancillary.png">
-              </span>
-              <h5>Ancillary Other Services</h5>
-          </a>
-        </div>
-      </div>
-
-    </div>
-    </div>
-  </div>
-  <!-- Container Ends -->
-</section>
-<!-- Services Section Ends -->
-
-<!-- Enquiry Form Section--><!--
-<section id="enquiry" class="section">
-  <div class="container">
-    <div class="section-header">          
-      <h2 class="section-title">Instant Enquiry</h2>
-      <hr class="lines">
-    </div>
-    <form id="enquiryForm">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form-group">
-            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your full name">
-            <div class="help-block with-errors"></div>
-          </div>                                 
-        </div>
-        <div class="col-md-6">
-          <div class="form-group">
-            <input type="text" class="form-control" id="companyName" name="name" placeholder="Your Company Name(optional)">
-          </div>                                 
-        </div>
-        <div class="col-md-6">
-          <div class="form-group">
-            <input type="number" class="form-control" id="phoneNum" name="name" placeholder="Your Phone Number" required data-error="Please enter phone number">
-            <div class="help-block with-errors"></div>
-          </div>                                 
-        </div>
-        <div class="col-md-6">
-          <div class="form-group">
-            <input type="email" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
-            <div class="help-block with-errors"></div>
+        <!--
+        <div class="row rowNews"> 
+          <div class="col-md-3 section-header">
+            <h2 class="section-title">News & Updates | </h2>
+          </div>
+          <div class="col-md-9 newsScroller">
+            <ul>
+              <li>
+                <p><a href="#">Goods & Services Tax</a></p>
+              </li>
+              <li>
+                <p><a href="#">Income Tax</a></p>
+              </li>
+              <li>
+                <p><a href="#">Registrar of Companies</a></p>
+              </li>
+            </ul>
           </div> 
+        </div> -->
+    </div>          
+  </header>
+  <!-- Header Section End --> 
+
+  <!-- Quick enquiry modal pop-up-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 col-sm-12 col-12">
+        <div class="popup-btn" onclick="document.getElementById('id01').style.display='flex'">
+          <a href="#id01">Quick Enquiry</a>
         </div>
-        <div class="col-md-12">
-          <div class="form-group"> 
-            <textarea class="form-control" id="enquiry" placeholder="Your Enquiry" rows="8" data-error="Write your query" required></textarea>
-            <div class="help-block with-errors"></div>
+        <div id="id01" class="modal">
+          <div class="col-lg-6 col-md-10 col-xs-12">
+          <div class="modal-body">
+          <form class="modal-content animate" action="php/form-process.php" id="enquiryForm" method="post">
+          <div class="modal-header">
+          <h5 class="modal-title">Quick Enquiry</h5>
           </div>
-          <div class="submit-button text-center">
-            <button class="btn btn-common" id="submit" type="submit">Send Message</button>
-            <div id="msgSubmit" class="h3 text-center hidden"></div> 
-            <div class="clearfix"></div> 
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your full name">
+                      <div class="help-block with-errors"></div>
+                    </div>                                 
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="companyName" name="companyName" placeholder="Your Company Name(optional)">
+                    </div>                                 
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="number" class="form-control" id="phoneNum" name="phoneNum" placeholder="Your Phone Number" required data-error="Please enter phone number">
+                      <div class="help-block with-errors"></div>
+                    </div>                                 
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="email" placeholder="Your Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
+                      <div class="help-block with-errors"></div>
+                    </div> 
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group"> 
+                      <textarea class="form-control" id="enquiry" placeholder="Your Enquiry" name="enquiry" rows="8" data-error="Write your query" required></textarea>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="submit-button text-center">
+                      <button class="btn btn-common" id="submit" type="submit">Send Message</button>
+                      <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                      <div class="clearfix"></div> 
+                    </div>
+                  </div>
+                </div>            
+                      
+          </form>
+          </div>
           </div>
         </div>
-      </div>            
-    </form>     
+      </div>
+    </div>
   </div>
-</section>-->
-<!-- Enquiry Form Ends-->
+  <!-- Quick enquiry modal pop-up END-->
 
-<!-- About Section Start -->
-<section id="about" class="section" data-stellar-background-ratio="0.2">
-  <div class="container">
-    <div class="section-header">          
-      <h2 class="section-title">We Are HCA</h2>
-      <hr class="lines">
-      <h4>Harish Choudhary & Associates, (HCA Office)</h4>
-    </div>
-    <div>
-      <p>HCA is a Practising Chartered Accountant firm based in Mumbai, India and registered with The Institute of Chartered Accountants of India (ICAI).</p>
-      <p> Incorporated in 2013, Harish Choudhary & Associates (Chartered Accountants) was established by CA. Harish  Shyam  Choudhary.</p>
-      <br/>
-
-      <div class="row" style="margin:30px 0 50px;">
-        <div class="col-lg-4 col-sm-4 col-xs-12 box-item">
-          <span class="icon">
-            <img src="./img/icons/vision.png">
-          </span>
-          <div class="text">
-            <h4>Vision</h4>
-            <p>Grow Globally</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-4 col-xs-12 box-item">
-          <span class="icon">
-            <img src="./img/icons/loyalty.png">
-          </span>
-          <div class="text">
-            <h4>Core Values</h4>
-            <p>Quality | Commitments | Integrity | Timeliness | Empathy</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-4 col-xs-12 box-item">
-          <span class="icon">
-            <img src="./img/icons/mission.png">
-          </span>
-          <div class="text">
-            <h4>Mission</h4>
-            <p>Excellence</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <p>We at HCA office believe in striving towards excellence in providing high quality services to clients which are focused on the core principles:</p>
-        <table class="coreValues" style="display: flex;">
-          <tr><th>Quality: </th><td> We at HCA office abide to provide quality solutions to our clients, which helps them to achieve their objective. Our dedicated & experienced team is committed to provide professional excellence to ensure that clients receive the highest quality services and thereby ensure a long-lasting relationship.</td></tr>
-          <tr><th>Commitments: </th><td> We are committed to our objective when we say we will do, Consider it done.</td></tr>
-          <tr><th>Integrity:</th><td> Our firm abides by ethics, honesty and straight forward policy, we advise what we truly believe.</td></tr>
-          <tr><th>Timeliness:</th><td> We are committed to provide timely & cost effective services which will help our clients to achieve their objective efficiently.</td></tr>
-          <tr><th>Empathy:</th><td> We understand the problems of our clients and commit to resolve them with constructive results.</td></tr>
-        </table>
-      </div>
-    </div>
-      <!--<div class="col-lg-4 col-xs-12">
-        <div class="show-box">
-          <img class="img-fulid" src="img/features/feature.png" alt="">
-        </div>
-      </div>
-    </div>-->   
-</section>
-<!-- About Section End --> 
-
-<!-- News & Insights Section Start -->
-<section id="news-insights" class="section" data-stellar-background-ratio="-0.2">      
+  <!--Fixed contact buttons-->
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
-        <div class="news-item-box">
-          <h4>Latest News</h4>
-          
-          <marquee id="m2" direction="up" scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();" height="283">
-          <table id="ctl00_DataList1" style="width:100%;border-collapse:collapse;" cellspacing="0" border="0">
-              <tbody><tr>
-                <td><div> <a class="hedingnews">18 Dec 19</a> </div></td>
-              </tr>
-              <tr>
-                <td><div> <a href="#">Govt Informs 15th FFC About Implausibility of Meeting Revenue Targets of 5 Years</a> </div></td>
-              </tr>
-              <tr>
-                <td><div> <a href="#">No excuses, target over Rs 1 lakh crore GST collection in remaining months</a> </div></td>
-              </tr>
-              <tr>
-                <td><div> <a class="hedingnews">17 Dec 19</a> </div></td>
-              </tr>
-              <tr>
-                <td><div> <a href="#">Industry Favours New GSTR Slow Implementation &amp; 4-digits HSN Code</a> </div></td>
-              </tr>
-              <tr>
-                <td><div> <a href="#">Centre releases over Rs 35,000 crore as pending GST compensation to states </a> </div></td>
-              </tr>
-          </tbody></table>
-          </marquee>
-        </div>
+      <div class="col">
+        <a href="tel:022-49732394" id="btnCall"><img src="./img/icons/call.png" class="icon-img"></a>
       </div>
-      <div class="col-md-4 ">
-        <div class="news-item-box">
-          <h4>Official Links</h4>
-          <div class="row">
-            <div class="col-5 official-logos"> 
-              <a href="https://www.gst.gov.in/"><img src="./img/official-logos/GST.png"></a>
-            </div>
-            <div class="col-5 official-logos"> 
-              <a href="https://www.mca.gov.in/content/mca/global/en/home.html"><img src="./img/official-logos/MCA.png"></a>
-            </div>
-            <div class="col-5 official-logos"> 
-              <a href="https://www.rbi.org.in/"><img src="./img/official-logos/RBI.png" width="90px"></a>
-            </div>  
-            <div class="col-5 official-logos"> 
-              <a href="https://incometaxindia.gov.in/Pages/default.aspx"><img src="./img/official-logos/Income_Tax_Department_India.png"></a>
+      <div class="col">
+        <a href="mailto:harishsc1989@gmail.com" id="btnMail"><img src="./img/icons/gmail.png" class="icon-img"></a>
+      </div>
+      <div class="col">
+        <a href="#" id="btnWhatsapp"><img src="./img/icons/whatsapp.png" class="icon-img"></a>
+      </div>
+    </div>  
+  </div>
+
+  <!-- Services Section -->
+  <section id="sectors-services" class="section">
+    <!-- Container Starts -->
+    <div class="container">
+      <div class="section-header">          
+        <h2 class="section-title">Sectors & Services</h2>
+        <hr class="lines">
+        <p>The firm is focused at providing quality services in the field of Taxation, Audit & Assurance, Corporate law & Accountancy and Carters to small, medium & large companies spread across a wide range of industries across sectors, geographies & sizes.</p>
+      </div>
+      <div class="row sectorList" style="overflow: hidden;justify-content: center;">
+        <div class="col-sm-12 col-md-4 col-lg-3">
+          <div class="singleSector">
+            <a href="javascript:linkAudit()">
+                <span class="sectorIcon">
+                  <img src="./img/icons/audit.png">
+                </span>
+                <h5>Audit & Assurance</h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3">
+          <div class="singleSector">
+            <a href="javascript:linkTax()">
+              <span class="sectorIcon">
+                <img src="./img/icons/tax.png">
+              </span>
+              <h5>Taxation</h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3">
+          <div class="singleSector">           
+            <a href="javascript:linkInterTax()">
+                <span class="sectorIcon">
+                  <img src="./img/icons/international-tax.png">
+                </span>
+                <h5>International Taxation</h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3">
+          <div class="singleSector">
+            <a href="javascript:linkLegalServices()">
+                <span class="sectorIcon">
+                  <img src="./img/icons/legal-services.png">
+                </span>
+                <h5>Legal Services</h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3">
+          <div class="singleSector">
+            <a href="javascript:linkMngtConsultancy()">
+                <span class="sectorIcon">
+                  <img src="./img/icons/consultation.png">
+                </span>
+                <h5>Management Consultancy</h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3">
+          <div class="singleSector">
+            <a href="javascript:linkRoc()">
+                <span class="sectorIcon">
+                  <img src="./img/icons/roc.png">
+                </span>
+                <h5>ROC</h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3">
+          <div class="singleSector">
+            <a href="javascript:linkAncillary()">
+                <span class="sectorIcon">
+                  <img src="./img/icons/ancillary.png">
+                </span>
+                <h5>Ancillary Other Services</h5>
+            </a>
+          </div>
+        </div>
+
+      </div>
+      </div>
+    <!-- Container Ends -->
+  </section>
+  <!-- Services Section Ends -->
+
+  <!-- Enquiry Form Section--><!--
+  <section id="enquiry" class="section">
+    <div class="container">
+      <div class="section-header">          
+        <h2 class="section-title">Instant Enquiry</h2>
+        <hr class="lines">
+      </div>
+      <form id="enquiryForm">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your full name">
+              <div class="help-block with-errors"></div>
+            </div>                                 
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" class="form-control" id="companyName" name="name" placeholder="Your Company Name(optional)">
+            </div>                                 
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="number" class="form-control" id="phoneNum" name="name" placeholder="Your Phone Number" required data-error="Please enter phone number">
+              <div class="help-block with-errors"></div>
+            </div>                                 
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
+              <div class="help-block with-errors"></div>
             </div> 
-           </div>             
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="news-item-box">
-          <h4>Insights</h4>
-          <marquee id="m2" direction="up" scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();" height="283">
-          <li class="Prodetails"><span style="font-weight:bold;">09 Dec 2021</span> <span style="font-weight:bold;"><a target="_blank" href="#">About Us</a>  -</span>
-          <span>ASSOCIATES &nbsp; is a professional firm of Chartered Accountants s...</span></li>
-          </marquee>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- News & Insights Section End -->
-
-<!-- Contact Section Start -->
-<section id="contact" class="contactSection section" data-stellar-background-ratio="-0.2">      
-  <div class="row">     
-    <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12">
-      <div class="contact-us">
-        <h3>Contact With us</h3>
-        <div class="contact-address">
-          <p>501, 5th Floor, Plot No 1487,<br/> Prasad Chamber Premises CHS LTD,
-            <br/> Opera House, Girgaon,<br/> Mumbai-400004, Maharashtra, India</p>
-          <div>
-            <i class="fa fa-phone" aria-hidden="true"></i>
-            <a href="tel:02249732394"> 022-49732394 </a>
           </div>
-          <div>
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-            <a href="mailto:harishsc1989@gmail.com">harishsc1989@gmail.com </a>
-          </div>
-        </div>
-        <div class="social-icons">
-          <ul>
-            <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-            <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li class="dribbble"><a href="#"><i class="fa fa-dribbble"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>     
-    <div class="col-lg-8 col-md-6 col-sm-4 col-xs-12">
-      <div id="map">
-        <iframe src="https://www.google.com/maps/d/embed?mid=1QBD8g2Q9KytRyQrhBbXqOCE9U7A3wLvp&hl=en" width="100%" height="400" 
-        frameborder="0" scrolling="no" style="border:0; margin-top: -50px;" allowfullscreen marginheight="0" marginwidth="0"></iframe>
-      </div>
-    </div>
-  </div>
-</section> 
-<!-- Contact Section End -->
- 
-<!-- Footer Section Start -->
-<footer>          
-    <div class="container copyright">
-      <p>All copyrights reserved &copy; <span id="year"></span>
-         - Designed & Developed by <a rel="nofollow" href="#">Bhikhi</a></p>
-    </div>
-</footer>
-<!-- Footer Section End --> 
-
-
-    <!-- testimonial Section Start --><!--
-    <div id="testimonial" class="section" data-stellar-background-ratio="0.1">
-      <div class="container">
-        <div class="row justify-content-md-center">
           <div class="col-md-12">
-            <div class="touch-slider owl-carousel owl-theme">
-              <div class="testimonial-item">
-                <img src="img/testimonial/customer1.jpg" alt="Client Testimonoal" />
-                <div class="testimonial-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> adipisicing ciusmod tempor incididunt ut labore et</p>
-                  <h3>Jone Deam</h3>
-                  <span>Fondor of Jalmori</span>
-                </div>
-              </div>
-              <div class="testimonial-item">
-                <img src="img/testimonial/customer2.jpg" alt="Client Testimonoal" />
-                <div class="testimonial-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> adipisicing ciusmod tempor incididunt ut labore et</p>
-                  <h3>Oidila Matik</h3>
-                  <span>President Lexo Inc</span>
-                </div>
-              </div>
-              <div class="testimonial-item">
-                <img src="img/testimonial/customer3.jpg" alt="Client Testimonoal" />
-                <div class="testimonial-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> adipisicing ciusmod tempor incididunt ut labore et</p>
-                  <h3>Alex Dattilo</h3>
-                  <span>CEO Optima Inc</span>
-                </div>
-              </div>
-              <div class="testimonial-item">
-                <img src="img/testimonial/customer4.jpg" alt="Client Testimonoal" />
-                <div class="testimonial-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> adipisicing ciusmod tempor incididunt ut labore et</p>
-                  <h3>Paul Kowalsy</h3>
-                  <span>CEO & Founder</span>
-                </div>
-              </div>
+            <div class="form-group"> 
+              <textarea class="form-control" id="enquiry" placeholder="Your Enquiry" rows="8" data-error="Write your query" required></textarea>
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="submit-button text-center">
+              <button class="btn btn-common" id="submit" type="submit">Send Message</button>
+              <div id="msgSubmit" class="h3 text-center hidden"></div> 
+              <div class="clearfix"></div> 
             </div>
           </div>
-        </div>        
-      </div>
-    </div>-->
-    <!-- testimonial Section Start -->
+        </div>            
+      </form>     
+    </div>
+  </section>-->
+  <!-- Enquiry Form Ends-->
 
-    <!-- Blog Section --><!--
-    <section id="blog" class="section">-->
-      <!-- Container Starts --><!--
-      <div class="container">
-        <div class="section-header">          
-          <h2 class="section-title">Recent Blog</h2>
-          <hr class="lines">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
+  <!-- About Section Start -->
+  <section id="about" class="section" data-stellar-background-ratio="0.2">
+    <div class="container">
+      <div class="section-header">          
+        <h2 class="section-title">We Are HCA</h2>
+        <hr class="lines">
+        <h4>Harish Choudhary & Associates, (HCA Office)</h4>
+      </div>
+      <div>
+        <p>HCA is a Practising Chartered Accountant firm based in Mumbai, India and registered with The Institute of Chartered Accountants of India (ICAI).</p>
+        <p> Incorporated in 2013, Harish Choudhary & Associates (Chartered Accountants) was established by CA. Harish  Shyam  Choudhary.</p>
+        <br/>
+
+        <div class="row" style="margin:30px 0 50px;">
+          <div class="col-lg-4 col-sm-4 col-xs-12 box-item">
+            <span class="icon">
+              <img src="./img/icons/vision.png">
+            </span>
+            <div class="text">
+              <h4>Vision</h4>
+              <p>Grow Globally</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-4 col-xs-12 box-item">
+            <span class="icon">
+              <img src="./img/icons/loyalty.png">
+            </span>
+            <div class="text">
+              <h4>Core Values</h4>
+              <p>Quality | Commitments | Integrity | Timeliness | Empathy</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-4 col-xs-12 box-item">
+            <span class="icon">
+              <img src="./img/icons/mission.png">
+            </span>
+            <div class="text">
+              <h4>Mission</h4>
+              <p>Excellence</p>
+            </div>
+          </div>
         </div>
         <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">-->
-            <!-- Blog Item Starts --><!--
-            <div class="blog-item-wrapper">
-              <div class="blog-item-img">
-                <a href="single-post.html">
-                  <img src="img/blog/img1.jpg" alt="">
-                </a>                
-              </div>
-              <div class="blog-item-text"> 
-                <div class="meta-tags">
-                  <span class="date"><i class="lnr  lnr-clock"></i>2 Days Ago</span>
-                  <span class="comments"><a href="#"><i class="lnr lnr-bubble"></i> 24 Comments</a></span>
-                </div>
-                <h3>
-                  <a href="single-post.html">How often should you tweet?</a>
-                </h3>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... 
-                </p>
-                <a href="single-post.html" class="btn-rm">Read More <i class="lnr lnr-arrow-right"></i></a>
-              </div>
-            </div>-->
-            <!-- Blog Item Wrapper Ends--><!--
+          <p>We at HCA office believe in striving towards excellence in providing high quality services to clients which are focused on the core principles:</p>
+          <table class="coreValues" style="display: flex;">
+            <tr><th>Quality: </th><td> We at HCA office abide to provide quality solutions to our clients, which helps them to achieve their objective. Our dedicated & experienced team is committed to provide professional excellence to ensure that clients receive the highest quality services and thereby ensure a long-lasting relationship.</td></tr>
+            <tr><th>Commitments: </th><td> We are committed to our objective when we say we will do, Consider it done.</td></tr>
+            <tr><th>Integrity:</th><td> Our firm abides by ethics, honesty and straight forward policy, we advise what we truly believe.</td></tr>
+            <tr><th>Timeliness:</th><td> We are committed to provide timely & cost effective services which will help our clients to achieve their objective efficiently.</td></tr>
+            <tr><th>Empathy:</th><td> We understand the problems of our clients and commit to resolve them with constructive results.</td></tr>
+          </table>
+        </div>
+      </div>
+        <!--<div class="col-lg-4 col-xs-12">
+          <div class="show-box">
+            <img class="img-fulid" src="img/features/feature.png" alt="">
           </div>
+        </div>
+      </div>-->   
+  </section>
+  <!-- About Section End --> 
 
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">-->
-            <!-- Blog Item Starts --><!--
-            <div class="blog-item-wrapper">
-              <div class="blog-item-img">
-                <a href="single-post.html">
-                  <img src="img/blog/img2.jpg" alt="">
-                </a>                
-              </div>
-              <div class="blog-item-text"> 
-                <div class="meta-tags">
-                  <span class="date"><i class="lnr  lnr-clock"></i>2 Days Ago</span>
-                  <span class="comments"><a href="#"><i class="lnr lnr-bubble"></i> 24 Comments</a></span>
-                </div>
-                <h3>
-                  <a href="single-post.html">Content is still king</a>
-                </h3>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... 
-                </p>
-                <a href="single-post.html" class="btn-rm">Read More <i class="lnr lnr-arrow-right"></i></a>
-              </div>
-            </div>-->
-            <!-- Blog Item Wrapper Ends--><!--
+  <!-- News & Insights Section Start -->
+  <section id="news-insights" class="section" data-stellar-background-ratio="-0.2">      
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="news-item-box">
+            <h4>Latest News</h4>
+            
+            <marquee id="m2" direction="up" scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();" height="283">
+            <table id="ctl00_DataList1" style="width:100%;border-collapse:collapse;" cellspacing="0" border="0">
+                <tbody><tr>
+                  <td><div> <a class="hedingnews">18 Dec 19</a> </div></td>
+                </tr>
+                <tr>
+                  <td><div> <a href="#">Govt Informs 15th FFC About Implausibility of Meeting Revenue Targets of 5 Years</a> </div></td>
+                </tr>
+                <tr>
+                  <td><div> <a href="#">No excuses, target over Rs 1 lakh crore GST collection in remaining months</a> </div></td>
+                </tr>
+                <tr>
+                  <td><div> <a class="hedingnews">17 Dec 19</a> </div></td>
+                </tr>
+                <tr>
+                  <td><div> <a href="#">Industry Favours New GSTR Slow Implementation &amp; 4-digits HSN Code</a> </div></td>
+                </tr>
+                <tr>
+                  <td><div> <a href="#">Centre releases over Rs 35,000 crore as pending GST compensation to states </a> </div></td>
+                </tr>
+            </tbody></table>
+            </marquee>
           </div>
-
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">-->
-            <!-- Blog Item Starts --><!--
-            <div class="blog-item-wrapper">
-              <div class="blog-item-img">
-                <a href="single-post.html">
-                  <img src="img/blog/img3.jpg" alt="">
-                </a>                
+        </div>
+        <div class="col-md-4 ">
+          <div class="news-item-box">
+            <h4>Official Links</h4>
+            <div class="row">
+              <div class="col-5 official-logos"> 
+                <a href="https://www.gst.gov.in/"><img src="./img/official-logos/GST.png"></a>
               </div>
-              <div class="blog-item-text"> 
-                <div class="meta-tags">
-                  <span class="date"><i class="lnr  lnr-clock"></i>2 Days Ago</span>
-                  <span class="comments"><a href="#"><i class="lnr lnr-bubble"></i> 24 Comments</a></span>
-                </div> 
-                <h3>
-                  <a href="single-post.html">Social media at work</a>
-                </h3>
-                <p>
-                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... 
-                </p>
-                <a href="single-post.html" class="btn-rm">Read More <i class="lnr lnr-arrow-right"></i></a>
+              <div class="col-5 official-logos"> 
+                <a href="https://www.mca.gov.in/content/mca/global/en/home.html"><img src="./img/official-logos/MCA.png"></a>
               </div>
-            </div>-->
-            <!-- Blog Item Wrapper Ends--><!--
+              <div class="col-5 official-logos"> 
+                <a href="https://www.rbi.org.in/"><img src="./img/official-logos/RBI.png" width="90px"></a>
+              </div>  
+              <div class="col-5 official-logos"> 
+                <a href="https://incometaxindia.gov.in/Pages/default.aspx"><img src="./img/official-logos/Income_Tax_Department_India.png"></a>
+              </div> 
+             </div>             
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="news-item-box">
+            <h4>Insights</h4>
+            <marquee id="m2" direction="up" scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();" height="283">
+            <li class="Prodetails"><span style="font-weight:bold;">09 Dec 2021</span> <span style="font-weight:bold;"><a target="_blank" href="#">About Us</a>  -</span>
+            <span>ASSOCIATES &nbsp; is a professional firm of Chartered Accountants s...</span></li>
+            </marquee>
           </div>
         </div>
       </div>
-    </section>-->
-    <!-- blog Section End -->
+    </div>
+  </section>
+  <!-- News & Insights Section End -->
 
-    <!-- Go To Top Link -->
-    <a href="#" class="back-to-top">
-      <i class="lnr lnr-arrow-up"></i>
-    </a>
-    <!--
-    <div id="loader">
-      <div class="spinner">
-        <div class="double-bounce1"></div>
-        <div class="double-bounce2"></div>
+  <!-- Contact Section Start -->
+  <section id="contact" class="contactSection section" data-stellar-background-ratio="-0.2">      
+    <div class="row">     
+      <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12">
+        <div class="contact-us">
+          <h3>Contact With us</h3>
+          <div class="contact-address">
+            <p>501, 5th Floor, Plot No 1487,<br/> Prasad Chamber Premises CHS LTD,
+              <br/> Opera House, Girgaon,<br/> Mumbai-400004, Maharashtra, India</p>
+            <div>
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <a href="tel:02249732394"> 022-49732394 </a>
+            </div>
+            <div>
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:harishsc1989@gmail.com">harishsc1989@gmail.com </a>
+            </div>
+          </div>
+          <div class="social-icons">
+            <ul>
+              <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li class="dribbble"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>     
+      <div class="col-lg-8 col-md-6 col-sm-4 col-xs-12">
+        <div id="map">
+          <iframe src="https://www.google.com/maps/d/embed?mid=1QBD8g2Q9KytRyQrhBbXqOCE9U7A3wLvp&hl=en" width="100%" height="400" 
+          frameborder="0" scrolling="no" style="border:0; margin-top: -50px;" allowfullscreen marginheight="0" marginwidth="0"></iframe>
+        </div>
       </div>
-    </div>  -->    
+    </div>
+  </section> 
+  <!-- Contact Section End -->
+   
+  <!-- Footer Section Start -->
+  <footer>          
+      <div class="container copyright">
+        <p>All copyrights reserved &copy; <span id="year"></span>
+           - Designed & Developed by <a rel="nofollow" href="#">Bhikhi</a></p>
+      </div>
+  </footer>
+  <!-- Footer Section End --> 
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="js/jquery-min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script><!--
-    <script src="js/jquery.mixitup.js"></script>
-    <script src="js/nivo-lightbox.js"></script>-->
-    <script src="js/owl.carousel.js"></script>    
-    <script src="js/jquery.stellar.min.js"></script>    
-    <script src="js/scrolling-nav.js"></script>    
-    <script src="js/jquery.easing.min.js"></script>       
-    <script src="js/wow.js"></script>   <!--
-    <script src="js/jquery.vide.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>    
-    <script src="js/jquery.magnific-popup.min.js"></script>    
-    <script src="js/waypoints.min.js"></script>   --> 
-    <script src="js/form-validator.min.js"></script>
-    <script src="js/contact-form-script.js"></script>   
-    <script src="js/main.js"></script>
-    <script src="js/jquery.nav.js"></script>
 
-    <!--<script
-      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
-      async
-    ></script>-->
+  <!-- testimonial Section Start --><!--
+  <div id="testimonial" class="section" data-stellar-background-ratio="0.1">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-md-12">
+          <div class="touch-slider owl-carousel owl-theme">
+            <div class="testimonial-item">
+              <img src="img/testimonial/customer1.jpg" alt="Client Testimonoal" />
+              <div class="testimonial-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> adipisicing ciusmod tempor incididunt ut labore et</p>
+                <h3>Jone Deam</h3>
+                <span>Fondor of Jalmori</span>
+              </div>
+            </div>
+            <div class="testimonial-item">
+              <img src="img/testimonial/customer2.jpg" alt="Client Testimonoal" />
+              <div class="testimonial-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> adipisicing ciusmod tempor incididunt ut labore et</p>
+                <h3>Oidila Matik</h3>
+                <span>President Lexo Inc</span>
+              </div>
+            </div>
+            <div class="testimonial-item">
+              <img src="img/testimonial/customer3.jpg" alt="Client Testimonoal" />
+              <div class="testimonial-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> adipisicing ciusmod tempor incididunt ut labore et</p>
+                <h3>Alex Dattilo</h3>
+                <span>CEO Optima Inc</span>
+              </div>
+            </div>
+            <div class="testimonial-item">
+              <img src="img/testimonial/customer4.jpg" alt="Client Testimonoal" />
+              <div class="testimonial-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> adipisicing ciusmod tempor incididunt ut labore et</p>
+                <h3>Paul Kowalsy</h3>
+                <span>CEO & Founder</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>        
+    </div>
+  </div>-->
+  <!-- testimonial Section Start -->
 
-  </body>
+  <!-- Blog Section --><!--
+  <section id="blog" class="section">-->
+    <!-- Container Starts --><!--
+    <div class="container">
+      <div class="section-header">          
+        <h2 class="section-title">Recent Blog</h2>
+        <hr class="lines">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">-->
+          <!-- Blog Item Starts --><!--
+          <div class="blog-item-wrapper">
+            <div class="blog-item-img">
+              <a href="single-post.html">
+                <img src="img/blog/img1.jpg" alt="">
+              </a>                
+            </div>
+            <div class="blog-item-text"> 
+              <div class="meta-tags">
+                <span class="date"><i class="lnr  lnr-clock"></i>2 Days Ago</span>
+                <span class="comments"><a href="#"><i class="lnr lnr-bubble"></i> 24 Comments</a></span>
+              </div>
+              <h3>
+                <a href="single-post.html">How often should you tweet?</a>
+              </h3>
+              <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... 
+              </p>
+              <a href="single-post.html" class="btn-rm">Read More <i class="lnr lnr-arrow-right"></i></a>
+            </div>
+          </div>-->
+          <!-- Blog Item Wrapper Ends--><!--
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">-->
+          <!-- Blog Item Starts --><!--
+          <div class="blog-item-wrapper">
+            <div class="blog-item-img">
+              <a href="single-post.html">
+                <img src="img/blog/img2.jpg" alt="">
+              </a>                
+            </div>
+            <div class="blog-item-text"> 
+              <div class="meta-tags">
+                <span class="date"><i class="lnr  lnr-clock"></i>2 Days Ago</span>
+                <span class="comments"><a href="#"><i class="lnr lnr-bubble"></i> 24 Comments</a></span>
+              </div>
+              <h3>
+                <a href="single-post.html">Content is still king</a>
+              </h3>
+              <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... 
+              </p>
+              <a href="single-post.html" class="btn-rm">Read More <i class="lnr lnr-arrow-right"></i></a>
+            </div>
+          </div>-->
+          <!-- Blog Item Wrapper Ends--><!--
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">-->
+          <!-- Blog Item Starts --><!--
+          <div class="blog-item-wrapper">
+            <div class="blog-item-img">
+              <a href="single-post.html">
+                <img src="img/blog/img3.jpg" alt="">
+              </a>                
+            </div>
+            <div class="blog-item-text"> 
+              <div class="meta-tags">
+                <span class="date"><i class="lnr  lnr-clock"></i>2 Days Ago</span>
+                <span class="comments"><a href="#"><i class="lnr lnr-bubble"></i> 24 Comments</a></span>
+              </div> 
+              <h3>
+                <a href="single-post.html">Social media at work</a>
+              </h3>
+              <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... 
+              </p>
+              <a href="single-post.html" class="btn-rm">Read More <i class="lnr lnr-arrow-right"></i></a>
+            </div>
+          </div>-->
+          <!-- Blog Item Wrapper Ends--><!--
+        </div>
+      </div>
+    </div>
+  </section>-->
+  <!-- blog Section End -->
+
+  <!-- Go To Top Link -->
+  <a href="#" class="back-to-top">
+    <i class="lnr lnr-arrow-up"></i>
+  </a>
+  <!--
+  <div id="loader">
+    <div class="spinner">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+    </div>
+  </div>  -->    
+
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="js/jquery-min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script><!--
+  <script src="js/jquery.mixitup.js"></script>
+  <script src="js/nivo-lightbox.js"></script>-->
+  <script src="js/owl.carousel.js"></script>    
+  <script src="js/jquery.stellar.min.js"></script>    
+  <script src="js/scrolling-nav.js"></script>    
+  <script src="js/jquery.easing.min.js"></script>       
+  <script src="js/wow.js"></script>   <!--
+  <script src="js/jquery.vide.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>    
+  <script src="js/jquery.magnific-popup.min.js"></script>    
+  <script src="js/waypoints.min.js"></script>   --> 
+  <script src="js/form-validator.min.js"></script>
+  <script src="js/contact-form-script.js"></script>   
+  <script src="js/main.js"></script>
+  <script src="js/jquery.nav.js"></script>
+
+  <!--<script
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+    async
+  ></script>-->
+</body>
+</div>
 </html>
