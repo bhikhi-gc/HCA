@@ -25,7 +25,7 @@ window.addEventListener("resize", function() {
                       });
                 })
             });
-            /**
+            
             document.querySelectorAll('.has-megasubmenu a').forEach(function(element){
                 element.addEventListener('click', function (e) {
         
@@ -42,7 +42,7 @@ window.addEventListener("resize", function() {
 
                     }
                 });
-            })**/
+            })
         }
         // end if innerWidth
     }); 
@@ -59,7 +59,8 @@ $(function() {
             if (target.length) {
                 $('html, body').animate({
                     scrollTop: (target.offset().top -70)
-                }, 1200, "easeInOutExpo");
+                }, 1200, "easeInExpo");
+                $('.navbar-toggler:visible').click();
                 return false;
             }
         }
