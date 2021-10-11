@@ -59,7 +59,7 @@ $(function() {
             if (target.length) {
                 $('html, body').animate({
                     scrollTop: (target.offset().top -70)
-                }, 1200, "easeInExpo");
+                }, 1200, "easeOutExpo");
                 $('.navbar-toggler:visible').click();
                 return false;
             }
