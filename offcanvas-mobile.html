@@ -9,6 +9,7 @@
 <title>Demo - Bootstrap 5 navbar offcanvas on mobile. html code example </title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<link rel="stylesheet" href="css/main.css">  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
 
 <style type="text/css">
@@ -152,16 +153,148 @@ body.offcanvas-active{
 
 	<ul class="navbar-nav">
 		<li class="nav-item active"> <a class="nav-link" href="#">Home </a> </li>
-		<li class="nav-item"><a class="nav-link" href="#"> About </a></li>
-		<li class="nav-item"><a class="nav-link" href="#"> Services </a></li>
+		<li class="nav-item"><a class="nav-link page-scroll" href="#about"> About </a></li>
 		<li class="nav-item dropdown">
-			<a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  More items  </a>
-		    <ul class="dropdown-menu">
-			  <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
-			  <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
-			  <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
-		    </ul>
-		</li>
+            <a class="nav-link dropdown-toggle page-scroll" href="#sectors-services"> Services </a>
+              <ul class="dropdown-menu">
+                <li class="has-megasubmenu">
+                   <a class="dropdown-item" href="javascript:linkAudit()"> Audit & Assurance &raquo; </a>
+                   <div class="megasubmenu dropdown-menu">
+                   <div class="row">
+                            <div class="col">
+                                  <!--<h6 class="title">Audit & Assurance</h6>-->
+                                    <ul class="list-unstyled">
+                                        <li><a href="">Statutory Audits</a></li>
+                                        <li><a href="">Income Tax Audits</a></li>
+                                        <li><a href="">GST Audits</a></li>
+                                        <li><a href="">Inventory Audits</a></li>
+                                        <li><a href="">Trust Audits</a></li>
+                                        <li><a href="">Management Audits</a></li>
+                                        <li><a href="">Internal Audits/Internal Financial Control(IFC)</a></li>
+                                        <li><a href="">Fraud Investigation</a></li>
+                                    </ul>
+                            </div><!-- end col-3 -->
+                        </div><!-- end row -->
+                 </div>
+                </li>
+                <li class="has-megasubmenu">
+                   <a class="dropdown-item" href="javascript:linkTax()"> Taxation &raquo; </a>
+                   <div class="megasubmenu dropdown-menu">
+                   <div class="row">
+                            <div class="col">
+                                    <ul class="list-unstyled">
+                                        <li><a href="">Corporate Taxation</a></li>
+                                        <li><a href="">Individual Taxation</a></li>
+                                        <li><a href="">Firm Taxation</a></li>
+                                        <li><a href="">Merger & Acquisition</a></li>
+                                        <li><a href="">Tax Advisory</a></li>
+                                    </ul>
+                            </div><!-- end col-3 -->
+                        </div><!-- end row -->
+                 </div>
+                </li>
+                <li class="has-megasubmenu">
+                   <a class="dropdown-item" href="javascript:linkInterTax()"> International Taxation &raquo; </a>
+                   <div class="megasubmenu dropdown-menu">
+                   <div class="row">
+                            <div class="col">
+                                    <ul class="list-unstyled">
+                                        <li><a href="">Business Setup Service</a></li>
+                                        <li><a href="">Transfer Pricing</a></li>
+                                        <li><a href="">Tax planning & Optimization for domestic & Overseas Companies</a></li>
+                                        <li><a href="">Double Taxation Avoidance</a></li>
+                                        <li><a href="">NRI Taxation</a></li>
+                                        <li><a href="">Foreign Company Formation</a></li>
+                                    </ul>
+                            </div><!-- end col-3 -->
+                        </div><!-- end row -->
+                 </div>
+                </li>
+                <li class="has-megasubmenu">
+                   <a class="dropdown-item" href="javascript:linkLegalServices()"> Legal services &raquo; </a>
+                   <div class="megasubmenu dropdown-menu">
+                   <div class="row">
+                            <div class="col">
+                                    <ul class="list-unstyled">
+                                        <li><a href="">LLP/Firm Deed</a></li>
+                                        <li><a href="">HUF Deed</a></li>
+                                        <li><a href="">Gift Deed</a></li>
+                                        <li><a href="">Lease Deed</a></li>
+                                        <li><a href="">Affidavits</a></li>
+                                        <li><a href="">Liasion Office Setup</a></li>
+                                        <li><a href="">FEMA/RBI Compliance</a></li>
+                                    </ul>
+                            </div><!-- end col-3 -->
+                        </div><!-- end row -->
+                 </div>
+                </li>
+                <li class="has-megasubmenu">
+                   <a class="dropdown-item" href="javascript:linkMngtConsultancy()"> Management Consultancy &raquo; </a>
+                   <div class="megasubmenu dropdown-menu">
+                   <div class="row">
+                            <div class="col">
+                                    <ul class="list-unstyled">
+                                        <li><a href="">Business Planning</a></li>
+                                        <li><a href="">Accounting Outsourcing</a></li>
+                                        <li><a href="">Overseas Accounting</a></li>
+                                        <li><a href="">Business Valuation</a></li>
+                                        <li><a href="">Due Diligence</a></li>
+                                        <li><a href="">Strategic Planning & Consulting</a></li>
+                                        <li><a href="">Investment Advisory</a></li>
+                                        <li><a href="">Data Management</a></li>
+                                        <li><a href="">Fixed Assets Management</a></li>
+                                        <li><a href="">Valuations (other)</a></li>
+                                        <li><a href="">Fixed Assets Management</a></li>
+                                    </ul>
+                            </div><!-- end col-3 -->
+                        </div><!-- end row -->
+                 </div>
+                </li>
+                <li class="has-megasubmenu">
+                   <a class="dropdown-item" href="javascript:linkRoc()"> ROC &raquo; </a>
+                   <div class="megasubmenu dropdown-menu">
+                   <div class="row">
+                            <div class="col">
+                                    <ul class="list-unstyled">
+                                        <li><a href="">Incorporation of Companies/LLP</a></li>
+                                        <li><a href="">Corporation Restructuring</a></li>
+                                        <li><a href="">Amalgamation</a></li>
+                                        <li><a href="">Merger</a></li>
+                                        <li><a href="">Take Over</a></li>
+                                        <li><a href="">Compromise</a></li>
+                                        <li><a href="">Demerger/Split Spin off or Hive off</a></li>
+                                        <li><a href="">Slump Sales</a></li>
+                                        <li><a href="">Revival of defunct/ Sick Companies</a></li>
+                                        <li><a href="">Joint Venture. Foreign Collaboration/ Alliance</a></li>
+                                        <li><a href="">Applications & Approvals under Central Govt</a></li>
+                                        <li><a href="">NCLT</a></li>
+                                        <li><a href="">Regional Director</a></li>
+                                        <li><a href="">Registrar of Companies</a></li>
+                                        <li><a href="">Insolvency & Bankruptcy Code</a></li>
+                                    </ul>
+                            </div><!-- end col-3 -->
+                        </div><!-- end row -->
+                 </div>
+                </li>
+                <li class="has-megasubmenu">
+                   <a class="dropdown-item" href="javascript:linkAncillary()"> Ancillary Other Services &raquo; </a>
+                   <div class="megasubmenu dropdown-menu">
+                   <div class="row">
+                            <div class="col">
+                                    <ul class="list-unstyled">
+                                        <li><a href="">Financial Reporting</a></li>
+                                        <li><a href="">Analyzing Financial Data</a></li>
+                                        <li><a href="">Project Report/ Financing</a></li>
+                                    </ul>
+                            </div><!-- end col-3 -->
+                        </div><!-- end row -->
+                 </div>
+                </li>
+              </ul>
+    </li>
+		<li class="nav-item"><a class="nav-link page-scroll" href="#news-insights"> Insights </a> </li>
+    <li class="nav-item"><a class="nav-link page-scroll" href="#contact"> Contact </a></li>
+    <li class="nav-item"><a class="nav-link page-scroll" href="careers.html"> Careers </a></li>
 	</ul>
 	<ul class="navbar-nav ms-auto">
 		<li class="nav-item"><a class="nav-link" href="#"> Menu item </a></li>
@@ -218,6 +351,334 @@ body.offcanvas-active{
 </section>
 
 </div><!-- container //  -->
+  <!-- About Section Start -->
+  <section id="about" class="section" data-stellar-background-ratio="0.2">
+    <div class="container">
+      <div class="section-header">          
+        <h2 class="section-title">We Are HCA</h2>
+        <hr class="lines">
+        <h4>Harish Choudhary & Associates, (HCA Office)</h4>
+      </div>
+      <div>
+        <p>HCA is a Practising Chartered Accountant firm based in Mumbai, India and registered with The Institute of Chartered Accountants of India (ICAI).</p>
+        <p> Incorporated in 2013, Harish Choudhary & Associates (Chartered Accountants) was established by CA. Harish  Shyam  Choudhary.</p>
+        <br/>
 
+        <div class="row" style="margin:30px 0 50px;">
+          <div class="col-lg-4 col-sm-4 col-xs-12 box-item">
+            <span class="icon">
+              <img src="./img/icons/vision.png">
+            </span>
+            <div class="text">
+              <h4>Vision</h4>
+              <p>Grow Globally</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-4 col-xs-12 box-item">
+            <span class="icon">
+              <img src="./img/icons/loyalty.png">
+            </span>
+            <div class="text">
+              <h4>Core Values</h4>
+              <p>Quality | Commitments | Integrity | Timeliness | Empathy</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-4 col-xs-12 box-item">
+            <span class="icon">
+              <img src="./img/icons/mission.png">
+            </span>
+            <div class="text">
+              <h4>Mission</h4>
+              <p>Excellence</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <p>We at HCA office believe in striving towards excellence in providing high quality services to clients which are focused on the core principles:</p>
+          <table class="coreValues" style="display: flex;">
+            <tr><th>Quality: </th><td> We at HCA office abide to provide quality solutions to our clients, which helps them to achieve their objective. Our dedicated & experienced team is committed to provide professional excellence to ensure that clients receive the highest quality services and thereby ensure a long-lasting relationship.</td></tr>
+            <tr><th>Commitments: </th><td> We are committed to our objective when we say we will do, Consider it done.</td></tr>
+            <tr><th>Integrity:</th><td> Our firm abides by ethics, honesty and straight forward policy, we advise what we truly believe.</td></tr>
+            <tr><th>Timeliness:</th><td> We are committed to provide timely & cost effective services which will help our clients to achieve their objective efficiently.</td></tr>
+            <tr><th>Empathy:</th><td> We understand the problems of our clients and commit to resolve them with constructive results.</td></tr>
+          </table>
+        </div>
+      </div>
+        <!--<div class="col-lg-4 col-xs-12">
+          <div class="show-box">
+            <img class="img-fulid" src="img/features/feature.png" alt="">
+          </div>
+        </div>
+      </div>-->   
+  </section>
+  <!-- About Section End --> 
+
+  <!-- News & Insights Section Start -->
+  <section id="news-insights" class="section" data-stellar-background-ratio="-0.2">      
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="news-item-box">
+            <h4>Latest News</h4>
+            
+            <marquee id="m2" direction="up" scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();" height="283">
+            <table id="ctl00_DataList1" style="width:100%;border-collapse:collapse;" cellspacing="0" border="0">
+                <tbody><tr>
+                  <td><div> <a class="hedingnews">18 Dec 19</a> </div></td>
+                </tr>
+                <tr>
+                  <td><div> <a href="#">Govt Informs 15th FFC About Implausibility of Meeting Revenue Targets of 5 Years</a> </div></td>
+                </tr>
+                <tr>
+                  <td><div> <a href="#">No excuses, target over Rs 1 lakh crore GST collection in remaining months</a> </div></td>
+                </tr>
+                <tr>
+                  <td><div> <a class="hedingnews">17 Dec 19</a> </div></td>
+                </tr>
+                <tr>
+                  <td><div> <a href="#">Industry Favours New GSTR Slow Implementation &amp; 4-digits HSN Code</a> </div></td>
+                </tr>
+                <tr>
+                  <td><div> <a href="#">Centre releases over Rs 35,000 crore as pending GST compensation to states </a> </div></td>
+                </tr>
+            </tbody></table>
+            </marquee>
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div class="news-item-box">
+            <h4>Official Links</h4>
+            <div class="row">
+              <div class="col-5 official-logos"> 
+                <a href="https://www.gst.gov.in/"><img src="./img/official-logos/GST.png"></a>
+              </div>
+              <div class="col-5 official-logos"> 
+                <a href="https://www.mca.gov.in/content/mca/global/en/home.html"><img src="./img/official-logos/MCA.png"></a>
+              </div>
+              <div class="col-5 official-logos"> 
+                <a href="https://www.rbi.org.in/"><img src="./img/official-logos/RBI.png" width="90px"></a>
+              </div>  
+              <div class="col-5 official-logos"> 
+                <a href="https://incometaxindia.gov.in/Pages/default.aspx"><img src="./img/official-logos/Income_Tax_Department_India.png"></a>
+              </div> 
+             </div>             
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="news-item-box">
+            <h4>Insights</h4>
+            <marquee id="m2" direction="up" scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();" height="283">
+            <li class="Prodetails"><span style="font-weight:bold;">09 Dec 2021</span> <span style="font-weight:bold;"><a target="_blank" href="#">About Us</a>  -</span>
+            <span>ASSOCIATES &nbsp; is a professional firm of Chartered Accountants s...</span></li>
+            </marquee>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- News & Insights Section End -->
+
+  <!-- Contact Section Start -->
+  <section id="contact" class="contactSection section" data-stellar-background-ratio="-0.2">      
+    <div class="row">     
+      <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12">
+        <div class="contact-us">
+          <h3>Contact With us</h3>
+          <div class="contact-address">
+            <p>501, 5th Floor, Plot No 1487,<br/> Prasad Chamber Premises CHS LTD,
+              <br/> Opera House, Girgaon,<br/> Mumbai-400004, Maharashtra, India</p>
+            <div>
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <a href="tel:02249732394"> 022-49732394 </a>
+            </div>
+            <div>
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:harishsc1989@gmail.com">harishsc1989@gmail.com </a>
+            </div>
+          </div>
+          <div class="social-icons">
+            <ul>
+              <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li class="dribbble"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>     
+      <div class="col-lg-8 col-md-6 col-sm-4 col-xs-12">
+        <div id="map">
+          <iframe src="https://www.google.com/maps/d/embed?mid=1QBD8g2Q9KytRyQrhBbXqOCE9U7A3wLvp&hl=en" width="100%" height="400" 
+          frameborder="0" scrolling="no" style="border:0; margin-top: -50px;" allowfullscreen marginheight="0" marginwidth="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </section> 
+  <!-- Contact Section End -->
+
+<div class="navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+       <div class="container-fluid">
+         <a class="navbar-brand" href="index.html"><img src="img/HCA_logo.png" alt="" height="60px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-controls="main_nav"  aria-expanded="false" aria-label="Toggle navigation">        
+            <i class="lnr lnr-menu"></i>
+          </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+        <ul class="navbar-nav mr-auto w-100 justify-content-end">
+          <li class="nav-item"> <a class="nav-link page-scroll" href="#hero-area">Home </a> </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle page-scroll" href="#sectors-services"> Services </a>
+              <ul class="dropdown-menu">
+              <li class="has-megasubmenu">
+                 <a class="dropdown-item" href="javascript:linkAudit()"> Audit & Assurance &raquo; </a>
+                 <div class="megasubmenu dropdown-menu">
+                 <div class="row">
+                          <div class="col">
+                                <!--<h6 class="title">Audit & Assurance</h6>-->
+                                  <ul class="list-unstyled">
+                                      <li><a href="">Statutory Audits</a></li>
+                                      <li><a href="">Income Tax Audits</a></li>
+                                      <li><a href="">GST Audits</a></li>
+                                      <li><a href="">Inventory Audits</a></li>
+                                      <li><a href="">Trust Audits</a></li>
+                                      <li><a href="">Management Audits</a></li>
+                                      <li><a href="">Internal Audits/Internal Financial Control(IFC)</a></li>
+                                      <li><a href="">Fraud Investigation</a></li>
+                                  </ul>
+                          </div><!-- end col-3 -->
+                      </div><!-- end row -->
+               </div>
+              </li>
+              <li class="has-megasubmenu">
+                 <a class="dropdown-item" href="javascript:linkTax()"> Taxation &raquo; </a>
+                 <div class="megasubmenu dropdown-menu">
+                 <div class="row">
+                          <div class="col">
+                                  <ul class="list-unstyled">
+                                      <li><a href="">Corporate Taxation</a></li>
+                                      <li><a href="">Individual Taxation</a></li>
+                                      <li><a href="">Firm Taxation</a></li>
+                                      <li><a href="">Merger & Acquisition</a></li>
+                                      <li><a href="">Tax Advisory</a></li>
+                                  </ul>
+                          </div><!-- end col-3 -->
+                      </div><!-- end row -->
+               </div>
+              </li>
+              <li class="has-megasubmenu">
+                 <a class="dropdown-item" href="javascript:linkInterTax()"> International Taxation &raquo; </a>
+                 <div class="megasubmenu dropdown-menu">
+                 <div class="row">
+                          <div class="col">
+                                  <ul class="list-unstyled">
+                                      <li><a href="">Business Setup Service</a></li>
+                                      <li><a href="">Transfer Pricing</a></li>
+                                      <li><a href="">Tax planning & Optimization for domestic & Overseas Companies</a></li>
+                                      <li><a href="">Double Taxation Avoidance</a></li>
+                                      <li><a href="">NRI Taxation</a></li>
+                                      <li><a href="">Foreign Company Formation</a></li>
+                                  </ul>
+                          </div><!-- end col-3 -->
+                      </div><!-- end row -->
+               </div>
+              </li>
+              <li class="has-megasubmenu">
+                 <a class="dropdown-item" href="javascript:linkLegalServices()"> Legal services &raquo; </a>
+                 <div class="megasubmenu dropdown-menu">
+                 <div class="row">
+                          <div class="col">
+                                  <ul class="list-unstyled">
+                                      <li><a href="">LLP/Firm Deed</a></li>
+                                      <li><a href="">HUF Deed</a></li>
+                                      <li><a href="">Gift Deed</a></li>
+                                      <li><a href="">Lease Deed</a></li>
+                                      <li><a href="">Affidavits</a></li>
+                                      <li><a href="">Liasion Office Setup</a></li>
+                                      <li><a href="">FEMA/RBI Compliance</a></li>
+                                  </ul>
+                          </div><!-- end col-3 -->
+                      </div><!-- end row -->
+               </div>
+              </li>
+              <li class="has-megasubmenu">
+                 <a class="dropdown-item" href="javascript:linkMngtConsultancy()"> Management Consultancy &raquo; </a>
+                 <div class="megasubmenu dropdown-menu">
+                 <div class="row">
+                          <div class="col">
+                                  <ul class="list-unstyled">
+                                      <li><a href="">Business Planning</a></li>
+                                      <li><a href="">Accounting Outsourcing</a></li>
+                                      <li><a href="">Overseas Accounting</a></li>
+                                      <li><a href="">Business Valuation</a></li>
+                                      <li><a href="">Due Diligence</a></li>
+                                      <li><a href="">Strategic Planning & Consulting</a></li>
+                                      <li><a href="">Investment Advisory</a></li>
+                                      <li><a href="">Data Management</a></li>
+                                      <li><a href="">Fixed Assets Management</a></li>
+                                      <li><a href="">Valuations (other)</a></li>
+                                      <li><a href="">Fixed Assets Management</a></li>
+                                  </ul>
+                          </div><!-- end col-3 -->
+                      </div><!-- end row -->
+               </div>
+              </li>
+              <li class="has-megasubmenu">
+                 <a class="dropdown-item" href="javascript:linkRoc()"> ROC &raquo; </a>
+                 <div class="megasubmenu dropdown-menu">
+                 <div class="row">
+                          <div class="col">
+                                  <ul class="list-unstyled">
+                                      <li><a href="">Incorporation of Companies/LLP</a></li>
+                                      <li><a href="">Corporation Restructuring</a></li>
+                                      <li><a href="">Amalgamation</a></li>
+                                      <li><a href="">Merger</a></li>
+                                      <li><a href="">Take Over</a></li>
+                                      <li><a href="">Compromise</a></li>
+                                      <li><a href="">Demerger/Split Spin off or Hive off</a></li>
+                                      <li><a href="">Slump Sales</a></li>
+                                      <li><a href="">Revival of defunct/ Sick Companies</a></li>
+                                      <li><a href="">Joint Venture. Foreign Collaboration/ Alliance</a></li>
+                                      <li><a href="">Applications & Approvals under Central Govt</a></li>
+                                      <li><a href="">NCLT</a></li>
+                                      <li><a href="">Regional Director</a></li>
+                                      <li><a href="">Registrar of Companies</a></li>
+                                      <li><a href="">Insolvency & Bankruptcy Code</a></li>
+                                  </ul>
+                          </div><!-- end col-3 -->
+                      </div><!-- end row -->
+               </div>
+              </li>
+              <li class="has-megasubmenu">
+                 <a class="dropdown-item" href="javascript:linkAncillary()"> Ancillary Other Services &raquo; </a>
+                 <div class="megasubmenu dropdown-menu">
+                 <div class="row">
+                          <div class="col">
+                                  <ul class="list-unstyled">
+                                      <li><a href="">Financial Reporting</a></li>
+                                      <li><a href="">Analyzing Financial Data</a></li>
+                                      <li><a href="">Project Report/ Financing</a></li>
+                                  </ul>
+                          </div><!-- end col-3 -->
+                      </div><!-- end row -->
+               </div>
+              </li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle page-scroll" href="#about"> About </a>
+              <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="team.html"> Team </a></li>
+            </ul>
+          </li>
+          <li class="nav-item"> <a class="nav-link page-scroll" href="#news-insights"> Insights </a> </li>
+          <li class="nav-item"><a class="nav-link page-scroll" href="#contact"> Contact </a></li>
+          <li class="nav-item"><a class="nav-link page-scroll" href="careers.html"> Careers </a></li>
+          <li><a href="https://www.icai.org/"><img src="img/CA_logo.png" height="40px"></a></li>
+        </ul>
+        </div> <!-- navbar-collapse.// -->
+       </div> <!-- container-fluid.// -->
+      </nav>
+    </div>
 </body>
 </html>
