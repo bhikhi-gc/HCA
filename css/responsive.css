@@ -2,16 +2,52 @@
 /* tablets */
 /* only small tablets */
 @media (min-width: 768px) and (max-width: 991px) {
+  body, p{
+    font-size: 17px !important;
+  }
   .navbar{
   padding: 10px 30px !important;
   }
   .navbar-nav .nav-item:last-child{
     margin-right: 0px;
   }
+    #main_nav{
+    padding: 40px 0px;
+    font-size: 20px;
+    background: #e9ecef;
+  }
+  .navbar-nav > li {
+    margin: 0px 20px 0px !important;
+    padding: 10px 0px 10px;
+  }
+
+  .navbar-nav > li:not(:last-child){
+    border-bottom: 1px solid #fff;
+  }
+  .navbar-nav li a{
+    padding: 4px 16px !important;
+  }
+  .navbar-nav > li:last-child{
+    margin: 20px auto !important;
+  }
+  .dropdown-menu{
+    border: none !important;
+    background-color: transparent !important;
+  }
+  .dropdown-menu a{
+    font-size: 18px;
+  }
+  .dropdown-menu .dropdown-item{
+    background-color: #fff !important; 
+    border-radius: 20px;
+  }
+  .dropdown-menu li{
+  padding: 5px 15px !important;
+  }
   #hero-area .contents h1 {
     font-size: 36px; }
 
-   .official-logos img{
+  .official-logos img{
     width: 80px;
    } 
   .item-boxes h4 {
@@ -20,10 +56,21 @@
   #news-insights .news-item-box h3{
     font-size: 20px;
   }  
+  /**Sectors & services**/
+  #sectors-services .container {
+    max-width: 760px !important;
+    padding: 60px 20px 60px !important;
+  }
   #sectors-services .sectors-services-item ul{
     padding-left: 20px !important;
   }  
-
+  #sectors-services .icon img {
+    height: 30px;
+    width: 30px;}
+  #sectors-services .nav-tabs .icon {
+    width: 60px;
+    height: 60px;}
+/**Team**/
   #team .showOnSmall{
     display: block;
     margin: auto;
@@ -32,9 +79,8 @@
   #team .hideOnSmall{
     display: none;
   }
-
+/**Career**/
   #careers .container{
-  background-size: 80%;
   padding: 60px 40px 60px;}
 
   #features .show-box img {
@@ -62,9 +108,14 @@
 
   #blog .blog-item-text h3 {
     font-size: 14px;
-    line-height: 20px; } }
+    line-height: 20px; } 
+
+  }
 /* mobile or only mobile */
 @media (max-width: 767px) {
+  body, p{
+    font-size: 17px !important;
+  }
   h1{
   font-size: 32px !important;
   } 
@@ -96,11 +147,44 @@
     width: 100%;
     height: auto;
   }
+  #main_nav{
+    padding: 40px 0px;
+    font-size: 20px;
+    background: #e9ecef;
+  }
+  .navbar-nav > li {
+    margin: 0px 20px 0px !important;
+    padding: 10px 0px 10px;
+  }
+
+  .navbar-nav > li:not(:last-child){
+    border-bottom: 1px solid #fff;
+  }
+  .navbar-nav li a{
+    padding: 4px 16px !important;
+  }
+  .navbar-nav > li:last-child{
+    margin: 20px auto !important;
+  }
+  .dropdown-menu{
+    border: none !important;
+    background-color: transparent !important;
+  }
+  .dropdown-menu a{
+    font-size: 18px;
+  }
+  .dropdown-menu .dropdown-item{
+    background-color: #fff !important; 
+    border-radius: 20px;
+  }
+  .dropdown-menu li{
+  padding: 5px 15px !important;
+  }
   .container{
     padding: 0px !important;
   }
   .section {
-    padding: 60px 20px;
+    padding: 80px 20px;
   }
   .section-header .section-title {
     font-size: 24px; }
@@ -121,6 +205,9 @@
   #carouselBanner #impLinks img{
     width: 60px;
   }  
+  .modal-body{
+  padding: 2rem 1rem;
+  }
   #about{
     background-position-x: right !important;
   }  
@@ -140,14 +227,34 @@
   #news-insights .news-item-box h3{
     font-size: 20px;
   } 
+  .singlePage .mainSection {
+    margin: 60px auto 0px;  
+  }
+
+  /**Sectors & services**/
+  #sectors-services .container {
+    background: transparent !important;
+  }
   #sectors-services .sectors-services-item ul{
     padding-left: 0px !important;
     padding-top: 20px;
   }
+  #sectors-services .sectors-services-item {
+    padding: 60px 20px !important;
+    background-color: #fff !important;
+    margin-left: 0px !important;
+  }
+  #sectors-services .nav-tabs .active {
+    background: #fff !important;
+  }
+  #sectors-services .icon img {
+    height: 30px;
+    width: 30px;}
+  #sectors-services .nav-tabs .icon {
+    width: 60px;
+    height: 60px;}
 
-  .singlePage .mainSection {
-    margin: 60px auto 0px;  }
-
+    /**Team**/
   #team .showOnSmall{
     display: block;
     margin-bottom: 30px; }
@@ -155,9 +262,10 @@
     display: none;
   }
 
+  /** Careers **/
   #careers .container{
-  background-size: cover;
-  padding: 40px 10px 40px;}
+  padding: 60px 20px !important;}
+
   #features .show-box img {
     display: none; }
 

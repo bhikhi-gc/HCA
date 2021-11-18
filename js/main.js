@@ -13,53 +13,41 @@
         }
     });
 
-    
-  function darken_screen(yesno){
-    if( yesno == true ){
-      document.querySelector('.screen-darken').classList.add('active');
-    }
-    else if(yesno == false){
-      document.querySelector('.screen-darken').classList.remove('active');
-    }
-  }
-  
-  function close_offcanvas(){
-    darken_screen(false);
-    document.querySelector('.mobile-offcanvas.show').classList.remove('show');
-    document.body.classList.remove('offcanvas-active');
-  }
+    document.addEventListener("DOMContentLoaded", function(){
+    // make it as accordion for smaller screens
+    if (window.innerWidth < 992) {
 
-  function show_offcanvas(offcanvas_id){
-    darken_screen(true);
-    document.getElementById(offcanvas_id).classList.add('show');
-    document.body.classList.add('offcanvas-active');
-  }
-
-  document.addEventListener("DOMContentLoaded", function(){
-    document.querySelectorAll('[data-trigger]').forEach(function(everyelement){
-      
-      let offcanvas_id = everyelement.getAttribute('data-trigger');
-      
-      everyelement.addEventListener('click', function (e) {
-        e.preventDefault();
-            show_offcanvas(offcanvas_id);
-          
+      // close all inner dropdowns when parent is closed
+      document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+        everydropdown.addEventListener('hidden.bs.dropdown', function () {
+          // after dropdown is hidden, then find all submenus
+            this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+              // hide every submenu as well
+              everysubmenu.style.display = 'none';
+            });
+        })
       });
-    });
 
-    document.querySelectorAll('.btn-close').forEach(function(everybutton){
-      
-      everybutton.addEventListener('click', function (e) {
-        e.preventDefault();
-            close_offcanvas();
+      document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+        element.addEventListener('click', function (e) {
+            let nextEl = this.nextElementSibling;
+            if(nextEl && nextEl.classList.contains('submenu')) {  
+              // prevent opening link if link needs to open dropdown
+              e.preventDefault();
+              if(nextEl.style.display == 'block'){
+                nextEl.style.display = 'none';
+              } else {
+                nextEl.style.display = 'block';
+              }
+
+            }
         });
-    });
-
-    document.querySelector('.screen-darken').addEventListener('click', function(event){
-      close_offcanvas();
-    });
-    
+      })
+    }
+    // end if innerWidth
     }); 
+    // DOMContentLoaded  end
+
     /* 
    & wow js
    ========================================================================== */
@@ -169,6 +157,13 @@
           $(this).find('iframe').addClass('clicked')})
       .mouseleave(function(){
           $(this).find('iframe').removeClass('clicked')});
+/**
+  var oreintedWidth = $(window).width();
+  if (oreintedWidth > 1000) {
+    $("#aboutLink").click(function(event){
+      $(location).attr('href', 'file:///C:/Users/bhikhi/Desktop/mate-full/index.html#about');
+    });
+  }**/
 
 }(jQuery));
 
@@ -191,7 +186,8 @@ $('#carouselBanner').owlCarousel({
   });
 });
 
-/**Quick Enquiry modal
+/**Quick Enquiry modal**/
+/**
 var modal = document.getElementById('id01');
 window.onclick = function(event) {
 if (event.target == modal) {

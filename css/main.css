@@ -49,6 +49,12 @@ body {
   overflow-x: hidden; 
   height: 100%;
  }
+
+ body.modal-open {
+  overflow-y: hidden !important;
+  padding: 0px !important;
+}
+
 #wrappingBod{
   position: absolute;
     top: 0.5px;
@@ -123,6 +129,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 
 hr {
     background-color: transparent !important;}
+ 
 /* ==========================================================================
    2.1 Section Title
    ========================================================================== */
@@ -506,6 +513,9 @@ a.navbar-brand {
   top: -8px; }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  #aboutLink{
+    pointer-events: none;
+  }
   .navbar-collapse {
     position: absolute;
     top: 100%;
@@ -539,14 +549,7 @@ a.navbar-brand {
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   position: relative; }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .navbar-nav .nav-item a {
-      display: block;
-      padding: 4px 16px !important; } }
-  @media (max-width: 767px) {
-    .navbar-nav .nav-item a {
-      display: block;
-      padding: 4px 16px !important; } }
+
 .navbar-nav .nav-item:hover > a, .navbar-nav .nav-item.active a {
   background-color: #0e3e5e;
   color: #A1F153 !important; 
@@ -602,20 +605,10 @@ body.offcanvas-active{
   
   .offcanvas-header{ display:block; }
 
-  .mobile-offcanvas{
-    visibility: hidden;
-    transform:translateX(-100%);
-      border-radius:0; 
-    display:block;
-      position: fixed;
-      top: 0; left:0;
-      height: 100%;
-      z-index: 1200;
-      width:80%;
-      overflow-y: scroll;
-      overflow-x: hidden;
-      transition: visibility .3s ease-in-out, transform .3s ease-in-out;
-  }
+  .mobile-offcanvas{ visibility: hidden; transform:translateX(-100%);
+border-radius:0;  display:block; position: fixed; top: 0; left:0; height:
+100%; z-index: 1200; width:60%; overflow-y: scroll; overflow-x: hidden;
+transition: visibility .3s ease-in-out, transform .3s ease-in-out; }
 
   .mobile-offcanvas.show{
     visibility: visible;
@@ -820,7 +813,7 @@ padding: 20px 0px;
 }
 .modal-header{
   border-bottom: none !important;
-  padding:10px 0px 20px !important;
+  padding:0px !important;
 }
 .modal {
 display: none;
@@ -833,18 +826,24 @@ height: 100%;
 overflow: auto;
 background-color: rgba(0,0,0,0.4);
 padding-top: 60px;
+padding-right: 0px !important;
 align-items: center;
 justify-content: center;
 }
+
+.modal-body{
+  padding: 1rem 2rem;
+}
+
+.modal-dialog {
+  max-width: 700px !important;
+  margin: 100px auto 0px !important;
+}  
+
 #enquiryForm{
   background-color: #fff;
-  padding: 1rem;
 }
-.modal-content {
-background-color: #fefefe;
-margin: 5% auto 15% auto;
-width: 80%;
-}
+
 .close {
 position: absolute;
 right:10px;
@@ -1017,6 +1016,7 @@ display: none;
     padding: 15px 0 10px;
     background: #083d5f;
     margin-top: -10px;
+    border-radius: 30px;
 }
 /* ==========================================================================
   6. about Section Style
@@ -1028,7 +1028,7 @@ display: none;
     url(../img/about-bg-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: fixed;
+  background-attachment: fixed;
   overflow: hidden;  
   position: relative; 
 }
@@ -1348,8 +1348,8 @@ footer {
   Careers page
   ========================================================================== */
 #careers .container{
-  background:linear-gradient(rgb(255,255,255,0.9), rgb(255,255,255,0.9)), url('../img/career-team-02.jpg');
-  background-size: 70%;
+  background:linear-gradient(rgb(255,255,255,0.7), rgb(255,255,255,0.7)), url('../img/career.jpg');
+  background-size: cover;
   padding: 80px 60px 80px;
   background-repeat: no-repeat;
   background-position: center;
