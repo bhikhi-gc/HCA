@@ -205,6 +205,13 @@
   #carouselBanner #impLinks img{
     width: 60px;
   }  
+  #carouselBanner #banner-1 {
+  background: url('../img/slider/hero_area_1-S.jpg');
+  }
+  #carouselBanner #banner-2 {
+  background: url('../img/slider/hero_area_2-S.jpg');
+  } 
+
   .modal-body{
   padding: 2rem 1rem;
   }
